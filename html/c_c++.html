@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+	<title>TUPT|Library~C/C++</title>
+	<link href="../images/tupt.png" rel="icon"/>
+	<link href="../css/style.css" rel="stylesheet" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<style>
+		.allc{
+			height: 2500px;
+			width: 1600px;
+			/*width: 94%;*/
+			margin: auto;
+			background-color: #F0F0F0;
+			/*border: 1px solid red;*/
+			opacity: 0.95;
+		}
+
+		.midc{
+			margin-left: 0.35%;
+			float: left;
+			width: 65%;
+			height: auto;
+			background-color: white;
+			/*border: 1px solid red;*/
+			padding-top: 50px;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-bottom: 50px;
+			line-height: 30px;
+		}
+
+
+		.midc #dennis{
+			height: 250px;
+			width: 400px;
+			float: right;
+			margin-right: 100px;
+			margin-top: -150px;
+		}
+
+		.midc #yc{
+			height: 250px;
+			width: 400px;
+			float: left;
+			margin: 20px;
+		}
+
+		.midc textarea{
+			min-width: 100%;
+			max-width: 100%;
+			min-height: 400px;
+			max-height: 400px;
+			border-left: 5px solid maroon;
+		}
+
+		.midc #cc{
+			width: 100%;
+			height: 400px;
+		}
+
+		#ms{
+			float: right;
+		}
+
+
+		/* STYLE FOR TABLET/HALF SCREEN */
+		/* STYLE FOR TABLET/HALF SCREEN */
+		/* STYLE FOR TABLET/HALF SCREEN */
+		@media screen and (max-width:1100px)
+		{
+		.allc{
+			height: 2900px;
+			width: 100%;
+			/*width: 94%;*/
+			margin: auto;
+			background-color: #F0F0F0;
+			/*border: 1px solid red;*/
+		}
+
+		.midc{
+			margin-left: 0.35%;
+			float: left;
+			width: 65%;
+			height: auto;
+			background-color: white;
+			/*border: 1px solid red;*/
+			padding-top: 10px;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-bottom: 50px;
+			line-height: 30px;
+		}
+
+		.midc #dennis{
+			height: 250px;
+			width: 100%;
+			margin: auto;
+		}
+		}
+
+
+		/* STYLE FOR MINITAB */
+		/* STYLE FOR MINITAB */
+		/* STYLE FOR MINITAB */
+		@media screen and (max-width:955px)
+		{
+		.allc{
+			height: 2600px;
+			width: 100%;
+			/*width: 94%;*/
+			margin: auto;
+			background-color: #F0F0F0;
+			/*border: 1px solid red;*/
+		}
+
+		.midc{
+			margin-left: 0.35%;
+			float: left;
+			width: 95%;
+			height: auto;
+			background-color: white;
+			/*border: 1px solid red;*/
+			padding-top: 10px;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-bottom: 50px;
+			line-height: 30px;
+		}
+		.midc #dennis{
+			height: 250px;
+			width: 400px;
+			float: right;
+			margin-top: -150px;
+		}
+		}
+
+		/* befPHONE*/
+		/* bfePHONE*/
+		/* befPHONE*/
+		@media screen and (max-width:870px){
+			
+		.allc{
+			height: 2900px;
+			width: 100%;
+			/*width: 94%;*/
+			margin: auto;
+			background-color: #F0F0F0;
+			/*border: 1px solid red;*/
+		}
+		.midc #dennis{
+			height: 250px;
+			width: 100%;
+			margin: auto;
+		}
+		}
+
+		/* PHONE*/
+		/* PHONE*/
+		/* PHONE*/
+		@media screen and (max-width:615px){
+
+		.allc{
+			height: 3200px;
+			width: 100%;
+			/*width: 94%;*/
+			margin: auto;
+			background-color: #F0F0F0;
+			/*border: 1px solid red;*/
+		}
+
+		.midc{
+			margin-left: 0.35%;
+			float: left;
+			width: 90%;
+			height: auto;
+			background-color: white;
+			/*border: 1px solid red;*/
+			padding-top: 10px;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-bottom: 50px;
+			line-height: 30px;
+		}
+		.midc #cc{
+			width: 100%;
+			height: 200px;
+		}
+		}
+	</style>
+</head>
+
+<body>
+<div class="allc">
+	<div class="topheader">
+	
+	</div>
+	<div class="head" id="logo">
+	<!--
+		<img src="images/tupt.png" alt="" id="logo"/>
+		<h1>Technological Univesity of the Philippines</h1>
+		&nbsp;
+		<h2>Learning Resource Center	</h2>
+		<img src="images/header.png" alt="" /> -->
+		<a href="#"><img src="../images/tupt.png" alt="background" id="taas"/></a>
+		<img src="../images/ontop.jpg" alt="logo" id="ontop"/>
+	</div>
+	<div class="navsmall">
+		
+		<div class="search">
+			<form action="https://www.google.com/search" method="GET" target="_blank">
+				<input type="text" name="q" placeholder="Google Search . . ." id="ssb"/>
+				<button id="btn"><img src="../images/search.png" alt="button"/></button>
+			</form>
+		</div>
+		
+		<ul >
+			<li ><a href="#" ><img src="../images/menu.png" alt="Menu" class="hamburger"/></a>
+				<ul>
+					<li><a href="../home.html">HOME</a></li>
+					<li id="on11"><a href="#">BS Courses</a>
+						<div class="bscourse">
+							<ul>
+								<li><a href="#">BSESSDP-T</a></li>
+								<li><a href="#">BSIS-T</a></li>
+								<li id="on22"><a href="#" id="it">BSIT-T</a>
+									<div class="itless">
+									<ul>
+										<li><a href="html.html" class="html">HTML</a></li>
+										<li id="on33"><a href="c_c++.html">C/C++</a></li>
+										<li><a href="python.html">Python</a></li>
+										<li><a href="vb.html">VB.Net</a></li>
+										<li><a href="intro.html">Intro to Comp.</a></li>
+										<li><a href="hci.html">HCI</a></li>
+									</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">BET Courses</a>
+						<div class="betcourse">
+							<ul>
+								<li><a href="#">BETAT-T</a></li>
+								<li><a href="#">BETChT-T</a></li>
+								<li><a href="#">BETCT-T</a></li>
+								<li><a href="#">BETET-Te</a></li>
+								<li><a href="#">BETEMT-T</a></li>
+								<li><a href="#">BETElxT-T</a></li>
+								<li><a href="#">BETInCT-T</a></li>
+								<li><a href="#">BETMT-T</a></li>
+								<li><a href="#">BETMecT-T</a></li>
+								<li><a href="#">BETNDTT-T</a></li>
+								<li><a href="#">BETDMT-T</a></li>
+								<li><a href="#">BETHVAC/RT-T</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">Engineering</a>
+						<div class="engcourse">
+							<ul>
+								<li><a href="#">BSCESEP-T</a></li>
+								<li><a href="#">BSEESEP-T</a></li>
+								<li><a href="#">BSECESEP-T</a></li>
+								<li><a href="#">BSMESEP-T</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">Bachelor's</a>
+						<div class="bachcourse">
+							<ul>
+								<li><a href="#">BGTAT-T</a></li>
+								<li><a href="#">BTVTEdET-T</a></li>
+								<li><a href="#">BTVTEdElxT-</a></li>
+								<li><a href="#">BTVTEdICT-T</a></li>
+								<li><a href="#">TechVoc Educ</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">Ladderized</a>
+						<div class="ladcourse">
+							<ul>
+								<li><a href="#">BSCE-LEP</a></li>
+								<li><a href="#">BSEE-LEP</a></li>
+								<li><a href="#">BSECE-LEP</a></li>
+								<li><a href="#">BSME-LEP</a></li>
+								<li><a href="#">BTIT-LDP</a></li>
+								<li><a href="#">BE-LEP</a></li>
+								<li><a href="#">BTTE-LDP</a></li>
+								<li><a href="#">BSES-LDP</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</li>
+			<li id="lesson"><a href="#">Lesson</a>
+				<ul>
+				<li id="on44"><a href="#">Introduction</a></li>
+				<li><a href="#">Setup</a></li>
+				<li><a href="#">Structure</a></li>
+				<li><a href="#">Basic Syntax</a></li>
+				<li><a href="#">Data Types</a></li>
+				<li><a href="#">Variables</a></li>
+				<li><a href="#">Constants</a></li>
+				<li><a href="#">Classes</a></li>
+				<li><a href="#">Operators</a></li>
+				<li><a href="#">Decision Making</a></li>
+				<li><a href="#">Loops</a></li>
+				<li><a href="#">Function</a></li>
+				<li><a href="#">Scope Rules</a></li>
+				<li><a href="#">Arrays</a></li>
+				<li><a href="#">Pointesr</a></li>
+				<li><a href="#">Strings</a></li>
+				<li><a href="#">Structures</a></li>
+				<li><a href="#">Unions</a></li>
+				<li><a href="#">Bit Fields</a></li>
+				<li><a href="#">Typedef</a></li>
+				<li><a href="#">I/O</a></li>
+				<li><a href="#">File I/O</a></li>
+				<li><a href="#">Processors</a></li>
+				<li><a href="#">Header Files</a></li>
+				<li><a href="#">Type Casting</a></li>
+				<li><a href="#">Error Handling</a></li>
+				<li><a href="#">Recursion</a></li>
+				</ul>
+			</li>
+		</ul>
+		
+	</div>
+
+	<div class="nav">
+		<div class="search">
+			<form action="https://www.google.com/search" method="GET" target="_blank">
+				<input type="text" name="q" placeholder="Google Search . . ." id="sb"/>
+				<button id="sh"><img src="../images/search.png" alt="button"/></button>
+			</form>
+		</div>
+		<ul>
+			<li><a href="../home.html"><img src="../images/home.png" alt="icon" id="homeicon"/><span>HOME</span></a></li>
+			<li id="on1"><a href="#">BS Courses</a>
+				<div class="bscourse">
+					<ul>
+						<li><a href="#">BSESSDP-T</a></li>
+						<li><a href="#">BSIS-T</a></li>
+						<li id="on2"><a href="#">BSIT-T</a>
+							<ul>
+								<li><a href="html.html" class="html">HTML</a></li>
+								<li id="on3"><a href="#">C/C++</a></li>
+								<li><a href="python.html">Python</a></li>
+								<li><a href="vb.html">VB.Net</a></li>
+								<li><a href="intro.html">Intro to Comp.</a></li>
+								<li><a href="hci.html">HCI</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="#">BET Courses</a>
+				<div class="betcourse">
+					<ul>
+						<li><a href="#">BETAT-T</a></li>
+						<li><a href="#">BETChT-T</a></li>
+						<li><a href="#">BETCT-T</a></li>
+						<li><a href="#">BETET-Te</a></li>
+						<li><a href="#">BETEMT-T</a></li>
+						<li><a href="#">BETElxT-T</a></li>
+						<li><a href="#">BETInCT-T</a></li>
+						<li><a href="#">BETMT-T</a></li>
+						<li><a href="#">BETMecT-T</a></li>
+						<li><a href="#">BETNDTT-T</a></li>
+						<li><a href="#">BETDMT-T</a></li>
+						<li><a href="#">BETHVAC/RT-T</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="#">Engineering</a>
+				<div class="engcourse">
+					<ul>
+						<li><a href="#">BSCESEP-T</a></li>
+						<li><a href="#">BSEESEP-T</a></li>
+						<li><a href="#">BSECESEP-T</a></li>
+						<li><a href="#">BSMESEP-T</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="#">Bachelor's</a>
+				<div class="bachcourse">
+					<ul>
+						<li><a href="#">BGTAT-T</a></li>
+						<li><a href="#">BTVTEdET-T</a></li>
+						<li><a href="#">BTVTEdElxT-</a></li>
+						<li><a href="#">BTVTEdICT-T</a></li>
+						<li><a href="#">TechVoc Educ</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="#">Ladderized</a>
+				<div class="ladcourse">
+					<ul>
+						<li><a href="#">BSCE-LEP</a></li>
+						<li><a href="#">BSEE-LEP</a></li>
+						<li><a href="#">BSECE-LEP</a></li>
+						<li><a href="#">BSME-LEP</a></li>
+						<li><a href="#">BTIT-LDP</a></li>
+						<li><a href="#">BE-LEP</a></li>
+						<li><a href="#">BTTE-LDP</a></li>
+						<li><a href="#">BSES-LDP</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<!-- para to sa sticky sub menu
+	<div class="left">
+			<h2>Lesson: </h2>
+			<ul>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+			</ul>
+	</div>
+	-->
+	
+	<div class="content">
+		<div class="left">
+			<h2>C & C++<img src="../images/c.png" alt="icon" id="lespic"/></h2>
+			<ul>
+				<li id="on4"><a href="#">Introduction</a></li>
+				<li><a href="#">Setup</a></li>
+				<li><a href="#">Structure</a></li>
+				<li><a href="#">Basic Syntax</a></li>
+				<li><a href="#">Data Types</a></li>
+				<li><a href="#">Variables</a></li>
+				<li><a href="#">Constants</a></li>
+				<li><a href="#">Classes</a></li>
+				<li><a href="#">Operators</a></li>
+				<li><a href="#">Decision Making</a></li>
+				<li><a href="#">Loops</a></li>
+				<li><a href="#">Function</a></li>
+				<li><a href="#">Scope Rules</a></li>
+				<li><a href="#">Arrays</a></li>
+				<li><a href="#">Pointesr</a></li>
+				<li><a href="#">Strings</a></li>
+				<li><a href="#">Structures</a></li>
+				<li><a href="#">Unions</a></li>
+				<li><a href="#">Bit Fields</a></li>
+				<li><a href="#">Typedef</a></li>
+				<li><a href="#">I/O</a></li>
+				<li><a href="#">File I/O</a></li>
+				<li><a href="#">Processors</a></li>
+				<li><a href="#">Header Files</a></li>
+				<li><a href="#">Type Casting</a></li>
+				<li><a href="#">Error Handling</a></li>
+				<li><a href="#">Recursion</a></li>
+			</ul>
+		</div>
+
+		<div class="midc">
+			<h2>C Language</h2>
+			<p>C is a general-purpose, high-level language that was originally developed by Dennis M. Ritchie to develop the UNIX operating system at Bell Labs. 
+			C was originally first implemented on the DEC PDP-11 computer in 1972.</p>
+			<p>In 1978, Brian Kernighan and Dennis Ritchie produced the first publicly available description of C, now known as the K&R standard.</p>
+			<p>The UNIX operating system, the C compiler, and essentially all UNIX application programs have been written in C. C has now become a widely 
+			used professional language for various reasons −</p>
+			<ul>
+				<li>Easy to learn</li>
+				<li>Structured language</li>
+				<li>It produces efficient programs</li>
+				<li id="facts">It can handle low-level activities</li>
+				<li>It can be compiled on a variety of computer platforms</li>
+			</ul>
+			<img src="../images/dennis.png" alt="father of C" id="dennis"/>
+			&nbsp;
+			<h3>Facts about C</h3>
+			<p>C was invented to write an operating system called UNIX.</p>
+			<p>C is a successor of B language which was introduced around the early 1970s.</p>
+			<p>The language was formalized in 1988 by the American National Standard Institute (ANSI).</p>
+			<p>The UNIX OS was totally written in C.</p>
+			<p>Today C is the most widely used and popular System Programming Language.</p>
+			<p id="yuc">Most of the state-of-the-art software have been implemented using C.</p>
+			<p>Today's most popular Linux OS and RDBMS MySQL have been written in C.</p>
+			&nbsp;
+			<hr>
+			&nbsp;
+			<img src="../images/yc.png" alt="Use of C" id="yc"/>
+			<h3>Why use C?</h3>
+			<p>C was initially used for system development work, particularly the programs that make-up the operating system.
+			C was adopted as a system development language because it produces code that runs nearly as fast as the code 
+			written in assembly language. Some examples of the use of C might be −</p>
+			<ul>
+				<li>Operating Systems/li>
+				<li>Language Compilers</li>
+				<li>Assemblers</li>
+				<li>Text Editors</li>
+				<li>Print Spoolers</li>
+				<li>Network Drivers</li>
+				<li>Modern Programs</li>
+				<li>Databases</li>
+				<li id="ex">Language Interpreters</li>
+				<li>Utilities</li>
+			</ul>
+			&nbsp;
+			<hr>
+			&nbsp;
+			<h3>Sample Output</h3>
+			<textarea disabled>
+#include<stdio.h>
+#include<conio.h>
+#include<windows.h>
+#include<ctype.h>
+void gotoxy(int x, int y)
+{ HANDLE hConsoleOutput;
+COORD dwCursorPosition;
+dwCursorPosition.X=x;
+dwCursorPosition.Y=y;
+hConsoleOutput=GetStdHandle(STD_OUTPUT_HANDLE);
+SetConsoleCursorPosition(hConsoleOutput, dwCursorPosition);
+}
+
+int main()
+{
+	char ans, name[20];
+	int prelim=0, midterm=0, final=0, wprelim=0, wmidterm=0, wfinal=0, ave=0, passed=0, failed=0, row=5;
+	
+	start:
+	gotoxy(27,1);printf("Total Grade of a Student/s");	
+	
+	gotoxy(3,3);printf("Name");
+	gotoxy(10,3);printf("Prelims/W");
+	gotoxy(22,3);printf("Midterm/W");
+	gotoxy(34,3);printf("Final/W");
+	gotoxy(44,3);printf("Ave");
+	gotoxy(50,3);printf("Let");
+	gotoxy(56,3);printf("Remark");
+	gotoxy(65,3);printf("Pass");
+	gotoxy(72,3);printf("Fail");
+	
+	
+	gotoxy(20,18);printf("                                                    ");	
+	gotoxy(20,18);	
+	printf("Enter name: ");
+	scanf("%s", name);
+	
+	gotoxy(20,18);printf("                                                    ");	
+	gotoxy(20,18);
+	printf("Enter prelim score: ");
+	scanf("%d", &prelim);
+
+	gotoxy(20,18);printf("                                                    ");	
+	gotoxy(20,18);
+	printf("Enter midterm score: ");
+	scanf("%d", &midterm);
+	
+	gotoxy(20,18);printf("                                                    ");	
+	gotoxy(20,18);
+	printf("Enter final score: ");
+	scanf("%d", &final);
+
+	
+	wprelim=prelim*0.25;
+	wmidterm=0.25*midterm;
+	wfinal=0.50*final;		
+	ave=wprelim+wmidterm+wfinal;
+
+	
+	filter:
+	if(prelim<0||prelim>100||midterm<0||midterm>100||final<0||final>100)
+	{
+		printf("Invalid score\n");
+		printf("Do you want to try again? Y/N");
+		ans=toupper(getch());
+		if(!(ans=='Y'||ans=='N'))
+		{
+			goto filter;
+		}
+		else if(ans='Y')
+		{
+			goto start;
+		}
+		else
+		{
+			exit(0);	
+		}
+	}
+
+	
+	if(ave>=90)
+	{	
+	gotoxy(3,row);printf("%s", name);
+	gotoxy(10,row);printf("%d=%d", prelim, wprelim);
+	gotoxy(22,row);printf("%d=%d", midterm, wmidterm);
+	gotoxy(34,row);printf("%d=%d", final, wfinal);
+	gotoxy(44,row);printf("%d", ave);
+	gotoxy(50,row);printf("A");
+	gotoxy(56,row);printf("Passed");
+	passed=passed+1;
+	failed=failed+0;
+	gotoxy(65,row);printf("%d", passed);
+	gotoxy(72,row);printf("%d", failed);
+	row++;
+	}
+	
+	else if(ave>=80)
+	{
+	gotoxy(3,row);printf("%s", name);
+	gotoxy(10,row);printf("%d=%d", prelim, wprelim);
+	gotoxy(22,row);printf("%d=%d", midterm, wmidterm);
+	gotoxy(34,row);printf("%d=%d", final, wfinal);
+	gotoxy(44,row);printf("%d", ave);
+	gotoxy(50,row);printf("B");
+	gotoxy(56,row);printf("Passed");
+	passed=passed+1;
+	failed=failed+0;
+	gotoxy(65,row);printf("%d", passed);
+	gotoxy(72,row);printf("%d", failed);
+	row++;
+	}
+	
+	else if(ave>=70)
+	{
+gotoxy(3,row);printf("%s", name);
+	gotoxy(10,row);printf("%d=%d", prelim, wprelim);
+	gotoxy(22,row);printf("%d=%d", midterm, wmidterm);
+	gotoxy(34,row);printf("%d=%d", final, wfinal);
+	gotoxy(44,row);printf("%d", ave);
+	gotoxy(50,row);printf("C");
+	gotoxy(56,row);printf("Passed");
+	passed=passed+1;
+	failed=failed+0;
+	gotoxy(65,row);printf("%d", passed);
+	gotoxy(72,row);printf("%d", failed);
+	row++;
+	}
+
+	else if(ave>=61)
+	{
+	gotoxy(3,row);printf("%s", name);
+	gotoxy(10,row);printf("%d=%d", prelim, wprelim);
+	gotoxy(22,row);printf("%d=%d", midterm, wmidterm);
+	gotoxy(34,row);printf("%d=%d", final, wfinal);
+	gotoxy(44,row);printf("%d", ave);
+	gotoxy(50,row);printf("D");
+	gotoxy(56,row);printf("Passed");
+	passed=passed+1;
+	failed=failed+0;
+	gotoxy(65,row);printf("%d", passed);
+	gotoxy(72,row);printf("%d", failed);
+	row++;
+	}
+	
+	else
+	{
+	gotoxy(3,row);printf("%s", name);
+	gotoxy(10,row);printf("%d=%d", prelim, wprelim);
+	gotoxy(22,row);printf("%d=%d", midterm, wmidterm);
+	gotoxy(34,row);printf("%d=%d", final, wfinal);
+	gotoxy(44,row);printf("%d", ave);
+	gotoxy(50,row);printf("F");
+	gotoxy(56,row);printf("Failed");
+	passed=passed+0;
+	failed=failed+1;
+	gotoxy(65,row);printf("%d", passed);
+	gotoxy(72,row);printf("%d", failed);
+	row++;
+	}
+	
+	gotoxy(1,20);printf("                                                                                                  ");
+	gotoxy(1,20);
+	Exit:
+		printf("\n\nDo you want to continue? Y/N");
+		ans=toupper(getch());
+		if(!(ans=='Y'||ans=='N'))
+		{
+			goto Exit;
+		}
+		else if(ans='Y')
+		{
+				if(row<=15)
+			{
+				goto start;
+				
+			}
+			else
+			{
+				row=6;
+				system("cls");
+				goto start;
+			}
+		}
+		else
+		{
+			exit(0);	
+		}
+	
+	
+	
+	return 0;
+	getch();	
+}
+			</textarea>
+			<img src="../images/c++.png" alt="Example" id="cc"/>
+		</div>
+
+		<div class="right">
+			<h2>Contents: </h2>
+			<ul>
+				<li><a href="#logo">C Language</a></li>
+				<li><a href="#facts">Facts</a></li>
+				<li><a href="#yuc">Why use C</a></li>
+				<li><a href="#ex">Example</a></li>
+			</ul>
+			
+		</div>
+	</div>
+	
+	
+</div>
+
+
+<div class="footer">
+	<div class="footcontent">
+		<div class="footleft">
+			<div class="footleft1">
+				<img src="../images/GUNAYON.jpg" alt="gunayon"/>
+				<p>Rene Angelo G. Gunayon</p>
+				<p>+639072548245</p>
+				<p>19 years old</p>
+				<a href="https://www.facebook.com/renegunayon" target="_blank">facebook.com/renegunayon</a>
+			</div>
+			
+			<div class="footleft2">
+				<img src="../images/arvin.jpg" alt="arvin"/>
+				<p>Arvin V, Pariña</p>
+				<p>09567555412</p>
+				<p>19 years old</p>
+				<a href="https://www.facebook.com/xrxbrk" target="_blank">facebook.com/xrxbrk</a>
+			</div>
+			
+			<div class="footleft3">
+				<img src="../images/jb.jpg" alt="jb"/>
+				<p>JB S. Calot</p>
+				<p>09482617575</p>
+				<p>19 years old</p>
+				<a href="https://www.facebook.com/profile.php?id=100005127317054" target="_blank">facebook.com/jbcalot</a>
+			</div>
+		</div>
+		
+		<div class="footright">
+			<div class="footright1">
+				<h3><a href="../home.html">Home</a></h3>
+				<h3><a href="about.html">About</a></h3>
+				<h3><a href="#">Contacts</a></h3>
+			</div>
+			
+			<div class="footright2">
+				<h4>Contact us</h4>
+				<p>ragunayon@gmail.com</p>
+				
+				<div class="suggest">
+					<h4>Send Suggestions</h4>
+					<textarea placeholder="Send us your feedback..."></textarea>
+					<input type="submit" value="Send"/>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="thanks">
+				<a href="http://www.tup.edu.ph/" target="_blank"><img src="../images/tupt.png" alt="tupsite" id="tupsite"/></a>
+				<a href="https://www.w3schools.com/" target="_blank"><img src="../images/w3schools.png" alt="w3schoolssite" id="w3schoolssite"/></a>
+				<a href="https://www.codecademy.com/" target="_blank"><img src="../images/codecademy.png" alt="codecademysite" id="codecademysite"/></a>
+		</div>
+	</div>
+</div>
+
+<div class="foot">
+	<p>&copy;2018 All Rights Reserved &nbsp;&bull;&nbsp; Designed by BSIT-1A Group5</p>
+</div>
+
+<div class="up">
+	<h1><a href="#logo">^</a></h1>
+</div>
+
+</body>
+</html>

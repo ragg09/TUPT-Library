@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+	<title>TUPT|Library~VB.Net</title>
+	<link href="../images/tupt.png" rel="icon"/>
+	<link href="../css/style.css" rel="stylesheet" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<style>
+		.allvb{
+			height: 2400px;
+			width: 1600px;
+			/*width: 94%;*/
+			margin: auto;
+			background-color: #F0F0F0;
+			/*border: 1px solid red;*/
+			opacity: 0.95;
+		}
+
+		.midvb{
+			margin-left: 0.35%;
+			float: left;
+			width: 65%;
+			height: auto;
+			background-color: white;
+			/*border: 1px solid red;*/
+			padding-top: 50px;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-bottom: 50px;
+			line-height: 30px;
+		}
+
+		#ms{
+			float: right;
+		}
+
+
+		.midvb ul{
+			padding-right: 20px;
+		}
+
+		.midvb ul li{
+			padding-right: 20px;
+		}
+
+
+		.midvb p{
+			padding-right: 20px;
+		}
+
+		.mininav ul li{
+			float: left;
+			list-style: none;
+			background: lightgrey;
+			margin-right: 2px;
+			width: 50px;
+			text-align: center;
+			padding-left: 15px;
+		}
+
+		.mininav ul li:hover{
+			background: grey;
+		}
+
+		.mininav textarea{
+			max-height: 100%;
+			max-width: 100%;
+			min-height: 100%;
+			min-width: 100%;
+
+		}
+
+		.sample{
+			width: 900px;
+			height: 500px;
+			display: none;
+			margin-left: -15px;
+		}
+
+		.mininav #form1:hover> .sample{
+			display: block;
+			position: absolute;
+		}
+
+		.sample2{
+			width: 900px;
+			height: 500px;
+			display: none;
+			margin-left: -102px;
+		}
+
+		.mininav #module1:hover> .sample2{
+			display: block;
+			position: absolute;
+		}
+
+		.sample3{
+			width: 900px;
+			height: 500px;
+			display: none;
+			margin-left: -188px;
+		}
+
+		.mininav #form2:hover> .sample3{
+			display: block;
+			position: absolute;
+		}
+
+		.sample4{
+			width: 900px;
+			height: 500px;
+			display: none;
+			margin-left: -276px;
+		}
+
+		.mininav #module2:hover> .sample4{
+			display: block;
+			position: absolute;
+		}
+
+		#vbdesign1{
+			
+			height: 300px;
+			width: 80%;
+			float: left;
+			margin-top: 50px;
+			margin-left: -300px;
+			
+		}
+
+		#vbdesign2{
+			
+			height: 300px;
+			width: 80%;
+			float: left;
+			margin-top: 10px;
+			margin-left: 87px;
+		}
+
+		/* STYLE FOR TABLET/HALF SCREEN */
+		/* STYLE FOR TABLET/HALF SCREEN */
+		/* STYLE FOR TABLET/HALF SCREEN */
+		@media screen and (max-width:1100px)
+		{
+		.allvb{
+			height: 2600px;
+			width: 100%;
+			/*width: 94%;*/
+			margin: auto;
+			background-color: #F0F0F0;
+			/*border: 1px solid red;*/
+			opacity: 0.95;
+		}
+
+		.midvb{
+			margin-left: 0.35%;
+			float: left;
+			width: 65%;
+			height: auto;
+			background-color: white;
+			/*border: 1px solid red;*/
+			padding-top: 50px;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-bottom: 50px;
+			line-height: 30px;
+		}
+
+		.midvb ul{
+			padding-right: 20px;
+		}
+
+		.midvb ul li{
+			padding-right: 20px;
+		}
+
+
+		.midvbp{
+			padding-right: 20px;
+		}
+
+		.sample{
+			width: 530px;
+			height: 500px;
+			display: none;
+			margin-left: -15px;
+		}
+
+		.mininav #form1:hover> .sample{
+			display: block;
+			position: absolute;
+		}
+
+		.sample2{
+			width: 530px;
+			height: 500px;
+			display: none;
+			margin-left: -102px;
+		}
+
+		.mininav #module1:hover> .sample2{
+			display: block;
+			position: absolute;
+		}
+
+		.sample3{
+			width: 530px;
+			height: 500px;
+			display: none;
+			margin-left: -188px;
+		}
+
+		.mininav #form2:hover> .sample3{
+			display: block;
+			position: absolute;
+		}
+
+		.sample4{
+			width: 530px;	
+			height: 500px;
+			display: none;
+			margin-left: -276px;
+		}
+
+		.mininav #module2:hover> .sample4{
+			display: block;
+			position: absolute;
+		}
+		}
+
+		/* STYLE FOR MINITAB */
+		/* STYLE FOR MINITAB */
+		/* STYLE FOR MINITAB */
+		@media screen and (max-width:955px)
+		{
+		.allvb{
+			height: 2700px;
+			width: 100%;
+			/*width: 94%;*/
+			margin: auto;
+			background-color: #F0F0F0;
+			/*border: 1px solid red;*/
+			opacity: 0.95;
+		}
+
+		.midvb{
+			margin-left: 0.35%;
+			float: left;
+			width: 95%;
+			height: auto;
+			background-color: white;
+			/*border: 1px solid red;*/
+			padding-top: 50px;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-bottom: 50px;
+			line-height: 30px;
+		}
+
+		.midvb ul{
+			padding-right: 20px;
+		}
+
+		.midvb ul li{
+			padding-right: 20px;
+		}
+
+
+		.midvb p{
+			padding-right: 20px;
+		}
+
+		}
+
+
+		/* PHONE*/
+		/* PHONE*/
+		/* PHONE*/
+		@media screen and (max-width:615px){
+		.allvb{
+			height: 3200px;
+			width: 100%;
+			/*width: 94%;*/
+			margin: auto;
+			background-color: #F0F0F0;
+			/*border: 1px solid red;*/
+			opacity: 0.95;
+		}
+
+		.midvb{
+			margin-left: 0.35%;
+			float: left;
+			width: 90%;
+			height: auto;
+			background-color: white;
+			/*border: 1px solid red;*/
+			padding-top: 50px;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-bottom: 50px;
+			line-height: 30px;
+		}
+
+		.midvb ul{
+			padding-right: 20px;
+		}
+
+		.midvb ul li{
+			padding-right: 20px;
+		}
+
+
+		.midvb p{
+			padding-right: 20px;
+		}
+
+		.mininav ul li{
+			width: 30px;
+			font-size: 12px;
+		}
+
+		.sample{
+			width: 80%;
+			height: 500px;
+			display: none;
+			margin-right: -300px;
+		}
+
+		.mininav #form1:hover> .sample{
+			display: block;
+			position: absolute;
+		}
+
+		.sample2{
+			width: 80%;
+			height: 500px;
+			display: none;
+			margin-right: -300px;
+		}
+
+		.mininav #module1:hover> .sample2{
+			display: block;
+			position: absolute;
+		}
+
+		.sample3{
+			width: 80%;
+			height: 500px;
+			display: none;
+			margin-right: -300px;
+		}
+
+		.mininav #form2:hover> .sample3{
+			display: block;
+			position: absolute;
+		}
+
+		.sample4{
+			width: 80%;
+			height: 500px;
+			display: none;
+			margin-right: -300px;
+		}
+
+		.mininav #module2:hover> .sample4{
+			display: block;
+			position: absolute;
+		}	
+
+		#vbdesign1{
+			
+			height: 300px;
+			width: 80%;
+			float: left;
+			margin-top: 50px;
+			margin-left: -300px;
+			
+		}
+
+		#vbdesign2{
+			
+			height: 300px;
+			width: 80%;
+			float: left;
+			margin-top: 10px;
+			margin-left: -0px;
+		}
+		}
+	</style>
+</head>
+
+<body>
+<div class="allvb">
+	<div class="topheader">
+	
+	</div>
+	<div class="head" id="logo">
+	<!--
+		<img src="images/tupt.png" alt="" id="logo"/>
+		<h1>Technological Univesity of the Philippines</h1>
+		&nbsp;
+		<h2>Learning Resource Center	</h2>
+		<img src="images/header.png" alt="" /> -->
+		<a href="#"><img src="../images/tupt.png" alt="background" id="taas"/></a>
+		<img src="../images/ontop.jpg" alt="logo" id="ontop"/>
+	</div>
+	<div class="navsmall">
+		
+		<div class="search">
+			<form action="https://www.google.com/search" method="GET" target="_blank">
+				<input type="text" name="q" placeholder="Google Search . . ." id="ssb"/>
+				<button id="btn"><img src="../images/search.png" alt="button"/></button>
+			</form>
+		</div>
+		
+		<ul >
+			<li ><a href="#" ><img src="../images/menu.png" alt="Menu" class="hamburger"/></a>
+				<ul>
+					<li><a href="../home.html">HOME</a></li>
+					<li id="on11"><a href="#">BS Courses</a>
+						<div class="bscourse">
+							<ul>
+								<li><a href="#">BSESSDP-T</a></li>
+								<li><a href="#">BSIS-T</a></li>
+								<li id="on22"><a href="#" id="it">BSIT-T</a>
+									<div class="itless">
+									<ul>
+										<li><a href="html.html" class="html">HTML</a></li>
+										<li><a href="c_c++.html">C/C++</a></li>
+										<li><a href="python.html">Python</a></li>
+										<li id="on33"><a href="vb.html">VB.Net</a></li>
+										<li><a href="intro.html">Intro to Comp.</a></li>
+										<li><a href="hci.html">HCI</a></li>
+									</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">BET Courses</a>
+						<div class="betcourse">
+							<ul>
+								<li><a href="#">BETAT-T</a></li>
+								<li><a href="#">BETChT-T</a></li>
+								<li><a href="#">BETCT-T</a></li>
+								<li><a href="#">BETET-Te</a></li>
+								<li><a href="#">BETEMT-T</a></li>
+								<li><a href="#">BETElxT-T</a></li>
+								<li><a href="#">BETInCT-T</a></li>
+								<li><a href="#">BETMT-T</a></li>
+								<li><a href="#">BETMecT-T</a></li>
+								<li><a href="#">BETNDTT-T</a></li>
+								<li><a href="#">BETDMT-T</a></li>
+								<li><a href="#">BETHVAC/RT-T</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">Engineering</a>
+						<div class="engcourse">
+							<ul>
+								<li><a href="#">BSCESEP-T</a></li>
+								<li><a href="#">BSEESEP-T</a></li>
+								<li><a href="#">BSECESEP-T</a></li>
+								<li><a href="#">BSMESEP-T</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">Bachelor's</a>
+						<div class="bachcourse">
+							<ul>
+								<li><a href="#">BGTAT-T</a></li>
+								<li><a href="#">BTVTEdET-T</a></li>
+								<li><a href="#">BTVTEdElxT-</a></li>
+								<li><a href="#">BTVTEdICT-T</a></li>
+								<li><a href="#">TechVoc Educ</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">Ladderized</a>
+						<div class="ladcourse">
+							<ul>
+								<li><a href="#">BSCE-LEP</a></li>
+								<li><a href="#">BSEE-LEP</a></li>
+								<li><a href="#">BSECE-LEP</a></li>
+								<li><a href="#">BSME-LEP</a></li>
+								<li><a href="#">BTIT-LDP</a></li>
+								<li><a href="#">BE-LEP</a></li>
+								<li><a href="#">BTTE-LDP</a></li>
+								<li><a href="#">BSES-LDP</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</li>
+			<li id="lesson"><a href="#">Lesson</a>
+				<ul>
+				<li id="on44"><a href="#">Introduction</a></li>
+				<li><a href="#">Setup</a></li>
+				<li><a href="#">Structure</a></li>
+				<li><a href="#">Basic Syntax</a></li>
+				<li><a href="#">Data Types</a></li>
+				<li><a href="#">Variables</a></li>
+				<li><a href="#">Constants</a></li>
+				<li><a href="#">Classes</a></li>
+				<li><a href="#">Operators</a></li>
+				<li><a href="#">Decision Making</a></li>
+				<li><a href="#">Loops</a></li>
+				<li><a href="#">Function</a></li>
+				<li><a href="#">Scope Rules</a></li>
+				<li><a href="#">Arrays</a></li>
+				<li><a href="#">Pointesr</a></li>
+				<li><a href="#">Strings</a></li>
+				<li><a href="#">Structures</a></li>
+				<li><a href="#">Unions</a></li>
+				<li><a href="#">Bit Fields</a></li>
+				<li><a href="#">Typedef</a></li>
+				<li><a href="#">I/O</a></li>
+				<li><a href="#">File I/O</a></li>
+				<li><a href="#">Processors</a></li>
+				<li><a href="#">Header Files</a></li>
+				<li><a href="#">Type Casting</a></li>
+				<li><a href="#">Error Handling</a></li>
+				<li><a href="#">Recursion</a></li>
+				</ul>
+			</li>
+		</ul>
+		
+	</div>
+
+	<div class="nav">
+		<div class="search">
+			<form action="https://www.google.com/search" method="GET" target="_blank">
+				<input type="text" name="q" placeholder="Google Search . . ." id="sb"/>
+				<button id="sh"><img src="../images/search.png" alt="button"/></button>
+			</form>
+		</div>
+		<ul>
+			<li><a href="../home.html"><img src="../images/home.png" alt="icon" id="homeicon"/><span>HOME</span></a></li>
+			<li id="on1"><a href="#">BS Courses</a>
+				<div class="bscourse">
+					<ul>
+						<li><a href="#">BSESSDP-T</a></li>
+						<li><a href="#">BSIS-T</a></li>
+						<li id="on2"><a href="#">BSIT-T</a>
+							<ul>
+								<li><a href="html.html" class="html">HTML</a></li>
+								<li><a href="c_c++.html">C/C++</a></li>
+								<li><a href="python.html">Python</a></li>
+								<li id="on3"><a href="vb.html">VB.Net</a></li>
+								<li><a href="intro.html">Intro to Comp.</a></li>
+								<li><a href="hci.html">HCI</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="#">BET Courses</a>
+				<div class="betcourse">
+					<ul>
+						<li><a href="#">BETAT-T</a></li>
+						<li><a href="#">BETChT-T</a></li>
+						<li><a href="#">BETCT-T</a></li>
+						<li><a href="#">BETET-Te</a></li>
+						<li><a href="#">BETEMT-T</a></li>
+						<li><a href="#">BETElxT-T</a></li>
+						<li><a href="#">BETInCT-T</a></li>
+						<li><a href="#">BETMT-T</a></li>
+						<li><a href="#">BETMecT-T</a></li>
+						<li><a href="#">BETNDTT-T</a></li>
+						<li><a href="#">BETDMT-T</a></li>
+						<li><a href="#">BETHVAC/RT-T</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="#">Engineering</a>
+				<div class="engcourse">
+					<ul>
+						<li><a href="#">BSCESEP-T</a></li>
+						<li><a href="#">BSEESEP-T</a></li>
+						<li><a href="#">BSECESEP-T</a></li>
+						<li><a href="#">BSMESEP-T</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="#">Bachelor's</a>
+				<div class="bachcourse">
+					<ul>
+						<li><a href="#">BGTAT-T</a></li>
+						<li><a href="#">BTVTEdET-T</a></li>
+						<li><a href="#">BTVTEdElxT-</a></li>
+						<li><a href="#">BTVTEdICT-T</a></li>
+						<li><a href="#">TechVoc Educ</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="#">Ladderized</a>
+				<div class="ladcourse">
+					<ul>
+						<li><a href="#">BSCE-LEP</a></li>
+						<li><a href="#">BSEE-LEP</a></li>
+						<li><a href="#">BSECE-LEP</a></li>
+						<li><a href="#">BSME-LEP</a></li>
+						<li><a href="#">BTIT-LDP</a></li>
+						<li><a href="#">BE-LEP</a></li>
+						<li><a href="#">BTTE-LDP</a></li>
+						<li><a href="#">BSES-LDP</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<!-- para to sa sticky sub menu
+	<div class="left">
+			<h2>Lesson: </h2>
+			<ul>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+			</ul>
+	</div>
+	-->
+	
+	<div class="content">
+		<div class="left">
+			<h2>VB.Net<img src="../images/vb.png" alt="icon" id="lespic"/></h2>
+			<ul>
+				<li id="on4"><a href="#">Introduction</a></li>
+				<li><a href="#">Syntax</a></li>
+				<li><a href="#">Structure</a></li>
+				<li><a href="#">Data Types</a></li>
+				<li><a href="#">Variables</a></li>
+				<li><a href="#">Constant</a></li>
+				<li><a href="#">Modifier</a></li>
+				<li><a href="#">Statements</a></li>
+				<li><a href="#">Directives</a></li>
+				<li><a href="#">Operators</a></li>
+				<li><a href="#">Decision Making</a></li>
+				<li><a href="#">Loops</a></li>
+				<li><a href="#">Strings</a></li>
+				<li><a href="#">Date & Time</a></li>
+				<li><a href="#">Arrays</a></li>
+				<li><a href="#">Collections</a></li>
+				<li><a href="#">Functions</a></li>
+				<li><a href="#">Subs</a></li>
+				<li><a href="#">Class/Object</a></li>
+				<li><a href="#">File Handling</a></li>
+				<li><a href="#">Dialog Boxes</a></li>
+				<li><a href="#">Advance Forms</a></li>
+			</ul>
+		</div>
+
+		<div class="midvb">
+			<h2>VB.Net Programming</h2>
+			<p>Visual Basic .NET (VB.NET) is an object-oriented computer programming language implemented on the .NET Framework. 
+			Although it is an evolution of classic Visual Basic language, it is not backwards-compatible with VB6, and any 
+			code written in the old version does not compile under VB.NET.</p>
+			<img src="../images/vb.jpg" alt="microsoft" id="ms"/>
+			<p>Like all other .NET languages, VB.NET has complete support for object-oriented concepts. Everything in VB.NET is an object, 
+			including all of the primitive types (Short, Integer, Long, String, Boolean, etc.) and user-defined types, events, and even assemblies. 
+			All objects inherits from the base class Object.</p>
+			<p id="yvb">VB.NET is implemented by Microsoft's .NET framework. Therefore, it has full access to all the libraries in the .Net Framework. 
+			It's also possible to run VB.NET programs on Mono, the open-source alternative to .NET, not only under Windows, but even Linux or Mac OSX.</p>
+			&nbsp;
+			<p>The following reasons make VB.Net a widely used professional language −</p>
+			<ul>
+				<li>Modern, general purpose.</li>
+				<li>Object oriented.</li>
+				<li>Component oriented.</li>
+				<li>Easy to learn.	</li>
+				<li>Structured language.</li>
+				<li>It produces efficient programs.</li>
+				<li id="features">It can be compiled on a variety of computer platforms.</li>
+				<li>Part of .Net Framework.</li>
+			</ul>
+			&nbsp;
+			<hr>
+			&nbsp;
+			<h4>Strong Programming Features VB.Net</h4>
+			<p>VB.Net has numerous strong programming features that make it endearing to multitude of programmers worldwide. Let us mention some of these features −</p>
+			<ul>
+				<li>Boolean Conditions</li>
+				<li>Automatic Garbage Collection</li>
+				<li>Standard Library</li>
+				<li>Assembly Versioning/li>
+				<li>Properties and Events</li>
+				<li>Delegates and Events Management</li>
+				<li>Easy-to-use Generics</li>
+				<li>Indexers</li>
+				<li>Conditional Compilation</li>
+				<li id="ex">Simple Multithreading</li>
+			</ul>
+			&nbsp;
+			<hr>
+			&nbsp;
+			<h4>Explore . . . </h4>
+			<div class="mininav">
+				<ul>
+					<li id="form1">Form1
+						<div class="sample">
+							<textarea disabled>
+Public Class Form1
+    Dim duplicate As Boolean
+
+    Private Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click
+        If lblnetsal.Text = 0 Then
+            MessageBox.Show("Not yet computed", "Solve Button Error", MessageBoxButtons.OK, MessageBoxIcon.Hand)
+            Button1.Focus()
+        Else
+            duplicate = False
+
+            assign()
+
+            check_duplication()
+
+            If duplicate = False Then
+
+                concat()
+                list_of_concatenated.Add(concatenated)
+                add_to_file()
+                show_other_form()
+
+                Form2.dgvData.Rows.Clear()
+            End If
+        End If
+
+
+    End Sub
+
+
+    Private Sub check_duplication()
+        For Each info In get_data_from_file()
+
+            If info.Contains(input_name) Then
+                MsgBox(input_name + " already exist, please try again")
+                txtname.Text = ""
+                txtname.Focus()
+                duplicate = True
+                Exit Sub
+            Else
+                duplicate = False
+            End If
+        Next
+
+    End Sub
+
+    Private Sub assign()
+        input_name = txtname.Text
+        input_com = txtcom.Text
+        input_dep = txtdep.Text
+        input_hw = txthw.Text
+        input_pg = lblpg.Text
+        input_pos = lblpos.Text
+        input_paygrade = Val(lblpera.Text).ToString("#.##")
+        input_gross = Val(lblgross.Text).ToString("#.##")
+        input_taxp = Val(lbltaxp.Text).ToString("#.##")
+        input_tax = Val(lbltax.Text).ToString("#.##")
+        input_ot = lblot.Text
+        input_ut = lblut.Text
+        input_payrate = Val(lblpr.Text).ToString("#.##")
+        input_netsal = Val(lblnetsal.Text).ToString("#.##")
+
+    End Sub
+
+    Private Sub show_other_form()
+        Me.Hide()
+        Form2.Show()
+    End Sub
+
+    Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
+        duplicate = False
+        assign()
+        check_duplication()
+
+        If duplicate = False Then
+            concat()
+
+            list_of_concatenated.Item(selected_index) = concatenated
+
+            update_file()
+
+            btnEdit.Visible = False
+            btnSubmit.Visible = True
+
+            show_other_form()
+            display_data_from_file()
+        End If
+    End Sub
+
+    Private Sub rba_CheckedChanged(sender As Object, e As EventArgs) Handles rba.CheckedChanged
+        lblpg.Text = "A"
+    End Sub
+
+    Private Sub rbb_CheckedChanged(sender As Object, e As EventArgs) Handles rbb.CheckedChanged
+        lblpg.Text = "B"
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        If txtname.Text.Trim = String.Empty Then
+            MessageBox.Show("Name is required", "Name Missing Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            txtname.Focus()
+            txtname.SelectAll()
+        ElseIf txtcom.Text.Trim = String.Empty Then
+            MessageBox.Show("select Company", "company Missing Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            txtcom.Focus()
+            txtcom.SelectAll()
+        ElseIf txtdep.Text.Trim = String.Empty Then
+            MessageBox.Show("Select Department", "Department Missing Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            txtdep.Focus()
+            txtdep.SelectAll()
+        ElseIf IsNumeric(txthw.Text) = False Then
+            MessageBox.Show("Please put valid data", "Hours work Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            txthw.Focus()
+            txthw.SelectAll()
+
+        End If
+
+        If rba.Checked Then
+            If cbpos.Text = "M" Then
+                lblpera.Text = 5500
+                tax = 0.05
+                lblpos.Text = "Messenger"
+            ElseIf cbpos.Text = "E" Then
+                lblpera.Text = 6500
+                tax = 0.06
+                lblpos.Text = "Encoder"
+            ElseIf cbpos.Text = "T" Then
+                lblpera.Text = 7500
+                tax = 0.07
+                lblpos.Text = "Technician"
+            ElseIf cbpos.Text = "P" Then
+                lblpera.Text = 10000
+                tax = 0.08
+                lblpos.Text = "Programmer"
+            ElseIf cbpos.Text = "S" Then
+                lblpera.Text = 12000
+                tax = 0.09
+                lblpos.Text = "SystemAnalyst"
+            Else
+                MessageBox.Show("NO POSITION SELECTED", "Position Missing Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                rba.Focus()
+            End If
+        ElseIf rbb.Checked Then
+            If cbpos.Text = "M" Then
+                lblpera.Text = 6500
+                tax = 0.05
+                lblpos.Text = "Messenger"
+            ElseIf cbpos.Text = "E" Then
+                lblpera.Text = 7500
+                tax = 0.06
+                lblpos.Text = "Encoder"
+            ElseIf cbpos.Text = "T" Then
+                lblpera.Text = 8500
+                tax = 0.07
+                lblpos.Text = "Technician"
+            ElseIf cbpos.Text = "P" Then
+                lblpera.Text = 10500
+                tax = 0.08
+                lblpos.Text = "Programmer"
+            ElseIf cbpos.Text = "S" Then
+                lblpera.Text = 12500
+                tax = 0.09
+                lblpos.Text = "SystemAnalyst"
+            Else
+                MessageBox.Show("NO POSITION SELECTED", "Position Missing Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                rbb.Focus()
+            End If
+        Else
+            MessageBox.Show("NO PAY GRADE SELECTED", "Position Missing Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
+
+        lblpr.Text = Val(lblpera.Text) / Val(txthw.Text)
+
+        If Val(txthw.Text) = 160 Then
+            'lblgross.Text = Val(txthw.Text) * Val(lblpr.Text)
+            lblgross.Text = Sixty(txthw.Text, lblpr.Text)
+        ElseIf Val(txthw.Text) < 160 Then
+            'a = 160 - Val(txthw.Text)
+            'b = a * 1.5
+            'c = 160 * Val(lblpr.Text) - b
+            'lblgross.Text = c
+            'a = Una(Val(txthw.Text))
+            ' b = Dalawa(a)
+            'lblgross.Text = LessSixty(Val(lblpr.Text), b)
+            lblgross.Text = LessSixty(Val(txthw.Text), Val(lblpr.Text))
+            lblut.Text = a
+            lblot.Text = 0
+        Else
+            'aa = Val(txthw.Text) - 160
+            'bb = aa * 1.5
+            'cc = 160 * Val(lblpr.Text) + bb
+            'lblgross.Text = cc
+            lblgross.Text = MoreSixty(txthw.Text, lblpr.Text)
+            lblot.Text = aa
+            lblut.Text = 0
+        End If
+
+        lbltaxp.Text = tax
+        'lbltax.Text = Val(lblgross.Text) * Val(lbltaxp.Text)
+        lbltax.Text = Ttax(lblgross.Text, lbltaxp.Text)
+        'lblpr.Text = Val(lblpera.Text) / Val(txthw.Text)
+        lblpr.Text = PayRate(Val(lblpera.Text), Val(txthw.Text))
+        'lblnetsal.Text = Val(lblgross.Text) - (sss + pagibig + Val(lbltax.Text))
+        lblnetsal.Text = NetSal(lblgross.Text, lbltax.Text)
+        MessageBox.Show("Ready to Show", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Information)
+    End Sub
+End Class
+
+							</textarea>
+						</div>
+					</li>
+					<li id="module1">Module1
+						<div class="sample2">
+							<textarea disabled>
+Module Module1
+    Public list_of_concatenated As ArrayList = New ArrayList
+    Public input_name, input_com, input_dep, input_hw, input_pg, input_pos, input_paygrade, input_gross, input_taxp, input_tax, input_ot, input_ut, input_payrate, input_netsal, temp_array(1), concatenated, info, search As String
+    Public i, index, selected_index As Integer
+    Dim char_splitter As String = "|"
+
+
+    Public Function concat()
+        concatenated = input_name + char_splitter + input_com + char_splitter + input_dep + char_splitter + input_hw + char_splitter + input_pg + char_splitter + input_pos + char_splitter + input_paygrade + char_splitter + input_gross + char_splitter + input_taxp + char_splitter + input_tax + char_splitter + input_ot + char_splitter + input_ut + char_splitter + input_payrate + char_splitter + input_netsal
+    End Function
+
+    Public Function display_data_from_file()
+        Form2.dgvData.Rows.Clear()
+
+        For Each info In get_data_from_file()
+            temp_array = info.Split(char_splitter)
+            Form2.dgvData.Rows.Add(temp_array)
+        Next
+    End Function
+
+    Public Function delete_from_file()
+        display_data_from_file()
+
+        search = InputBox("Enter the Name to delete: ", "SEARCH NAME")
+
+        get_index()
+
+        list_of_concatenated.RemoveAt(selected_index)
+
+        update_file()
+
+        display_data_from_file()
+    End Function
+
+    Public Function get_index()
+        index = 0
+
+        For Each info In get_data_from_file()
+
+            If info.Contains(search) Then
+                selected_index = index
+                Exit For
+            Else
+                index += 1
+            End If
+        Next
+    End Function
+
+    Public Function search_from_file()
+        Dim row As Integer = Form2.dgvData.Rows.Add
+
+        Form2.dgvData.Rows.Clear()
+
+        search = InputBox("Enter the NAME: ", "SEARCH NAME")
+
+        For Each info In get_data_from_file()
+
+            If info.Contains(search) Then
+                temp_array = info.Split(char_splitter)
+                Form2.dgvData.Rows.Add(temp_array)
+            End If
+        Next
+    End Function
+
+    Public tax As Decimal
+    Public sss As Integer = 200
+    Public pagibig As Integer = 100
+    Public a, b, c As Decimal
+    Public aa, bb, cc As Decimal
+
+    Public Function Sixty(ByVal num1 As Decimal, ByVal num2 As Decimal)
+        Return num1 * num2
+    End Function
+
+    'FUNCTION FOR LESS THAN SIXTY
+    'a = 160 - Val(txthw.Text)
+    'b = a * 1.5
+    'c = 160 * Val(lblpr.Text) - b
+    'lblgross.Text = c
+    'lblut.Text = a
+    'lblot.Text = 0
+
+    'Public Function Una(ByVal num1 As Decimal)
+    'Return 160 - num1
+    'End Function
+
+    'Public Function Dalawa(ByVal num1 As Decimal)
+    'Return Una(num1) * 1.5
+    'End Function
+
+    'Public Function LessSixty(ByVal num1 As Decimal, ByVal num2 As Decimal)
+    'Return 160 * num1 - num2
+    'End Function
+    Public Function LessSixty(ByVal num1 As Decimal, ByVal num2 As Decimal)
+        a = 160 - num1
+        b = a * 1.5
+        c = 160 * num2 - b
+        Return c
+    End Function
+
+    'FUNCTION FOR LESS THAN SIXTY
+    'aa = Val(txthw.Text) - 160
+    'bb = aa * 1.5
+    'cc = 160 * Val(lblpr.Text) + bb
+    'lblgross.Text = cc
+    Public Function MoreSixty(ByVal num1 As Decimal, ByVal num2 As Decimal)
+        aa = num1 - 160
+        bb = aa * 1.5
+        cc = 160 * num2 + bb
+        Return cc
+    End Function
+
+    'FUNCTION FOR TAX
+    'lbltax.Text = Val(lblgross.Text) * Val(lbltaxp.Text)
+    Public Function Ttax(ByVal num1 As Decimal, ByVal num2 As Decimal)
+        Return num1 * num2
+    End Function
+
+    'FUNCTION FOR PAY RATE
+    'lblpr.Text = Val(lblpera.Text) / Val(txthw.Text)
+    Public Function PayRate(ByVal num1 As Decimal, ByVal num2 As Decimal)
+        Return num1 / num2
+    End Function
+
+    'FUNCTION FOR NET SALARY
+    'lblnetsal.Text = Val(lblgross.Text) - (sss + pagibig + Val(lbltax.Text))
+    Public Function NetSal(ByVal num1 As Decimal, num2 As Decimal)
+        Return num1 - (sss + pagibig + num2)
+    End Function
+End Module
+
+							</textarea>
+						</div>
+					</li>
+					<li id="form2">Form2
+						<div class="sample3">
+							<textarea disabled>
+Public Class Form2
+    Private Sub btnHome_Click(sender As Object, e As EventArgs) Handles btnHome.Click
+        Me.Hide()
+        Form1.Show()
+        Form1.txtname.Text = ""
+        Form1.txtcom.Text = ""
+        Form1.txtdep.Text = ""
+        Form1.txthw.Text = ""
+        Form1.rba.Checked = False
+        Form1.rbb.Checked = False
+        Form1.cbpos.Text = ""
+        Form1.lblnetsal.Text = 0
+        Form1.lblot.Text = 0
+        Form1.lblut.Text = 0
+    End Sub
+
+    Private Sub btnShow_Click(sender As Object, e As EventArgs) Handles btnShow.Click
+        display_data_from_file()
+    End Sub
+
+    Private Sub btnHide_Click(sender As Object, e As EventArgs) Handles btnHide.Click
+        dgvData.Rows.Clear()
+    End Sub
+
+    Private Sub btnSearch_Click(sender As Object, e As EventArgs) Handles btnSearch.Click
+        search_from_file()
+    End Sub
+
+    Private Sub btnDel_Click(sender As Object, e As EventArgs) Handles btnDel.Click
+        delete_from_file()
+    End Sub
+
+    Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
+        Dim i As Integer
+        index = 0
+        search_from_file()
+
+        get_index()
+
+        i = dgvData.CurrentRow.Index
+
+        Form1.txtname.Text = dgvData(0, i).Value
+        Form1.txtcom.Text = dgvData(1, i).Value
+
+        Form1.btnEdit.Visible = True
+        Form1.btnSubmit.Visible = False
+
+        Me.Hide()
+        Form1.Show()
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        Application.Exit()
+    End Sub
+
+End Class
+							</textarea>
+						</div>
+					</li>
+					<li id="module2">Module2
+						<div class="sample4">
+							<textarea disabled>
+Imports System.IO
+
+Module Module2
+
+    Public path As String = Environment.CurrentDirectory & "\records.txt"
+
+    Public Function add_to_file()
+        Dim source As New FileStream(path, FileMode.OpenOrCreate, FileAccess.ReadWrite)
+        Dim sulat As New StreamWriter(source)
+
+        For Each info In list_of_concatenated
+            sulat.WriteLine(info)
+        Next
+
+        sulat.Close()
+        source.Close()
+    End Function
+
+    Public Function get_data_from_file()
+        Dim source As New FileStream(path, FileMode.OpenOrCreate, FileAccess.Read, FileShare.Read)
+        Dim basa As New StreamReader(source)
+
+        list_of_concatenated.Clear()
+
+        Do Until basa.EndOfStream
+            list_of_concatenated.Add(basa.ReadLine())
+        Loop
+
+        basa.Close()
+        source.Close()
+
+        Return list_of_concatenated
+    End Function
+
+    Public Function update_file()
+        File.WriteAllText(path, "")
+        add_to_file()
+    End Function
+End Module
+
+							</textarea>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<img src="../images/form1.png" alt="iamge1" id="vbdesign1"/>
+			<img src="../images/form2.png" alt="image2" id="vbdesign2"/>
+		</div>
+
+		<div class="right">
+			<h2>Contents: </h2>
+			<ul>
+				<li><a href="#logo">Visual Basic</a></li>
+				<li><a href="#yvb">Why VB</a></li>
+				<li><a href="#features">Features</a></li>
+				<li><a href="#ex">Example</a></li>
+			</ul>
+			
+		</div>
+	</div>
+	
+	
+</div>
+
+
+<div class="footer">
+	<div class="footcontent">
+		<div class="footleft">
+			<div class="footleft1">
+				<img src="../images/GUNAYON.jpg" alt="gunayon"/>
+				<p>Rene Angelo G. Gunayon</p>
+				<p>+639072548245</p>
+				<p>19 years old</p>
+				<a href="https://www.facebook.com/renegunayon" target="_blank">facebook.com/renegunayon</a>
+			</div>
+			
+			<div class="footleft2">
+				<img src="../images/arvin.jpg" alt="arvin"/>
+				<p>Arvin V, Pariña</p>
+				<p>09567555412</p>
+				<p>19 years old</p>
+				<a href="https://www.facebook.com/xrxbrk" target="_blank">facebook.com/xrxbrk</a>
+			</div>
+			
+			<div class="footleft3">
+				<img src="../images/jb.jpg" alt="arvin"/>
+				<p>JB S. Calot</p>
+				<p>09482617575</p>
+				<p>19 years old</p>
+				<a href="https://www.facebook.com/profile.php?id=100005127317054" target="_blank">facebook.com/jbcalot</a>
+			</div>
+		</div>
+		
+		<div class="footright">
+			<div class="footright1">
+				<h3><a href="../home.html">Home</a></h3>
+				<h3><a href="about.html">About</a></h3>
+				<h3><a href="#">Contacts</a></h3>
+			</div>
+			
+			<div class="footright2">
+				<h4>Contact us</h4>
+				<p>ragunayon@gmail.com</p>
+				
+				<div class="suggest">
+					<h4>Send Suggestions</h4>
+					<textarea placeholder="Send us your feedback..."></textarea>
+					<input type="submit" value="Send"/>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="thanks">
+				<a href="http://www.tup.edu.ph/" target="_blank"><img src="../images/tupt.png" alt="tupsite" id="tupsite"/></a>
+				<a href="https://www.w3schools.com/" target="_blank"><img src="../images/w3schools.png" alt="w3schoolssite" id="w3schoolssite"/></a>
+				<a href="https://www.codecademy.com/" target="_blank"><img src="../images/codecademy.png" alt="codecademysite" id="codecademysite"/></a>
+		</div>
+	</div>
+</div>
+
+<div class="foot">
+	<p>&copy;2018 All Rights Reserved &nbsp;&bull;&nbsp; Designed by BSIT-1A Group5</p>
+</div>
+
+<div class="up">
+	<h1><a href="#logo">^</a></h1>
+</div>
+
+</body>
+</html>

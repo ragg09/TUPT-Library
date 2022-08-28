@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+	<title>TUPT|Library~Human Computer Interaction</title>
+	<link href="../images/tupt.png" rel="icon"/>
+	<link href="../css/style.css" rel="stylesheet" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<style>
+		.allabout{
+			height: 2200px;
+			width: 1600px;
+			/*width: 94%;*/
+			margin: auto;
+			background-color: #F0F0F0;
+			/*border: 1px solid red;*/
+			opacity: 0.95;
+		}
+
+
+		.midabout{
+			width: 95%;
+			height: auto;
+			margin: auto;
+			background-color: white;
+			/*border: 1px solid red;*/
+			padding-top: 10px;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-bottom: 50px;
+			line-height: 30px;
+		}
+
+		.midabout table {
+			/*border: 1px solid black;*/
+			width: 90%;
+			margin: auto;
+		}
+
+		.midabout table tr td{
+			/*border: 1px solid black;*/
+			height: auto;
+			width: 48%;
+			padding: 10px;
+		}
+
+		.midabout iframe{
+			width: 100%; 
+			height: 400px;
+		}
+
+		.midabout img{
+			width: 100%;
+		}
+
+		/* STYLE FOR TABLET/HALF SCREEN */
+		/* STYLE FOR TABLET/HALF SCREEN */
+		/* STYLE FOR TABLET/HALF SCREEN */
+		@media screen and (max-width:1100px)
+		{
+		.allabout{
+			height: 2600px;
+			width: 100%;
+			/*width: 94%;*/
+			margin: auto;
+			background-color: #F0F0F0;
+			/*border: 1px solid red;*/
+		}
+
+		.midabout{
+			width: 95%;
+			height: auto;
+			margin: auto;
+			background-color: white;
+			/*border: 1px solid red;*/
+			padding-top: 10px;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-bottom: 50px;
+			line-height: 30px;
+		}
+		}
+
+
+
+		/* STYLE FOR MINITAB */
+		/* STYLE FOR MINITAB */
+		/* STYLE FOR MINITAB */
+		@media screen and (max-width:955px)
+		{
+		.allabout{
+			height: 3100px;
+			width: 100%;
+			/*width: 94%;*/
+			margin: auto;
+			background-color: #F0F0F0;
+			/*border: 1px solid red;*/
+		}
+
+		.midabout{
+			width: 95%;
+			height: auto;
+			margin: auto;
+			background-color: white;
+			/*border: 1px solid red;*/
+			padding-top: 10px;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-bottom: 50px;
+			line-height: 30px;
+		}
+		}
+
+		/* PHONE*/
+		/* PHONE*/
+		/* PHONE*/
+		@media screen and (max-width:615px){
+
+		.allabout{
+			height: 4000px;
+			width: 100%;
+			/*width: 94%;*/
+			margin: auto;
+			background-color: #F0F0F0;
+			/*border: 1px solid red;*/
+		}
+
+		.midabout{
+			width: 95%;
+			height: auto;
+			margin: auto;
+			background-color: white;
+			/*border: 1px solid red;*/
+			padding-top: 10px;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-bottom: 50px;
+			line-height: 30px;
+		}
+		}
+	</style>
+</head>
+
+<body>
+<div class="allabout">
+	<div class="topheader">
+	
+	</div>
+	<div class="head" id="logo">
+	<!--
+		<img src="images/tupt.png" alt="" id="logo"/>
+		<h1>Technological Univesity of the Philippines</h1>
+		&nbsp;
+		<h2>Learning Resource Center	</h2>
+		<img src="images/header.png" alt="" /> -->
+		<a href="#"><img src="../images/tupt.png" alt="background" id="taas"/></a>	
+		<img src="../images/ontop.jpg" alt="logo" id="ontop"/>
+	</div>
+	<div class="navsmall">
+		
+		<div class="search">
+			<form action="https://www.google.com/search" method="GET" target="_blank">
+				<input type="text" name="q" placeholder="Google Search . . ." id="ssb"/>
+				<button id="btn"><img src="../images/search.png" alt="button"/></button>
+			</form>
+		</div>
+		
+		<ul >
+			<li ><a href="#" ><img src="../images/menu.png" alt="Menu" class="hamburger"/></a>
+				<ul>
+					<li><a href="../home.html">HOME</a></li>
+					<li id="on11"><a href="#">BS Courses</a>
+						<div class="bscourse">
+							<ul>
+								<li><a href="#">BSESSDP-T</a></li>
+								<li><a href="#">BSIS-T</a></li>
+								<li id="on22"><a href="#" id="it">BSIT-T</a>
+									<div class="itless">
+									<ul>
+										<li><a href="html.html" class="html">HTML</a></li>
+										<li><a href="c_c++.html">C/C++</a></li>
+										<li><a href="python.html">Python</a></li>
+										<li><a href="vb.html">VB.Net</a></li>
+										<li><a href="intro.html">Intro to Comp.</a></li>
+										<li id="on33"><a href="hci.html">HCI</a></li>
+									</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">BET Courses</a>
+						<div class="betcourse">
+							<ul>
+								<li><a href="#">BETAT-T</a></li>
+								<li><a href="#">BETChT-T</a></li>
+								<li><a href="#">BETCT-T</a></li>
+								<li><a href="#">BETET-Te</a></li>
+								<li><a href="#">BETEMT-T</a></li>
+								<li><a href="#">BETElxT-T</a></li>
+								<li><a href="#">BETInCT-T</a></li>
+								<li><a href="#">BETMT-T</a></li>
+								<li><a href="#">BETMecT-T</a></li>
+								<li><a href="#">BETNDTT-T</a></li>
+								<li><a href="#">BETDMT-T</a></li>
+								<li><a href="#">BETHVAC/RT-T</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">Engineering</a>
+						<div class="engcourse">
+							<ul>
+								<li><a href="#">BSCESEP-T</a></li>
+								<li><a href="#">BSEESEP-T</a></li>
+								<li><a href="#">BSECESEP-T</a></li>
+								<li><a href="#">BSMESEP-T</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">Bachelor's</a>
+						<div class="bachcourse">
+							<ul>
+								<li><a href="#">BGTAT-T</a></li>
+								<li><a href="#">BTVTEdET-T</a></li>
+								<li><a href="#">BTVTEdElxT-</a></li>
+								<li><a href="#">BTVTEdICT-T</a></li>
+								<li><a href="#">TechVoc Educ</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">Ladderized</a>
+						<div class="ladcourse">
+							<ul>
+								<li><a href="#">BSCE-LEP</a></li>
+								<li><a href="#">BSEE-LEP</a></li>
+								<li><a href="#">BSECE-LEP</a></li>
+								<li><a href="#">BSME-LEP</a></li>
+								<li><a href="#">BTIT-LDP</a></li>
+								<li><a href="#">BE-LEP</a></li>
+								<li><a href="#">BTTE-LDP</a></li>
+								<li><a href="#">BSES-LDP</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</li>
+			<li id="lesson"><a href="#">Lesson</a>
+				<ul>
+					<li id="on44"><a href="#">Introduction</a></li>
+					<li><a href="#">Processes</a></li>
+					<li><a href="#">Procedures</a></li>
+					<li><a href="#">Measuring</a></li>
+					<li><a href="#">Science</a></li>
+					<li><a href="#">Convertions</a></li>
+					<li><a href="#">Language</a></li>
+					<li><a href="#">Language</a></li>
+					<li><a href="#">Scheme</a></li>
+					<li><a href="#">Primitives</a></li>
+					<li><a href="#">Data</a></li>
+					<li><a href="#">Calculator</a></li>		
+				</ul>
+			</li>
+		</ul>
+		
+	</div>
+
+	<div class="nav">
+		<div class="search">
+			<form action="https://www.google.com/search" method="GET" target="_blank">
+				<input type="text" name="q" placeholder="Google Search . . ." id="sb"/>
+				<button id="sh"><img src="../images/search.png" alt="button"/></button>
+			</form>
+		</div>
+		<ul>
+			<li><a href="../home.html"><img src="../images/home.png" alt="icon" id="homeicon"/><span>HOME</span></a></li>
+			<li id="on1"><a href="#">BS Courses</a>
+				<div class="bscourse">
+					<ul>
+						<li><a href="#">BSESSDP-T</a></li>
+						<li><a href="#">BSIS-T</a></li>
+						<li id="on2"><a href="#">BSIT-T</a>
+							<ul>
+								<li><a href="html.html" class="html">HTML</a></li>
+								<li><a href="c_c++.html">C/C++</a></li>
+								<li><a href="python.html">Python</a></li>
+								<li><a href="vb.html">VB.Net</a></li>
+								<li><a href="intro.html">Intro to Comp.</a></li>
+								<li id="on3"><a href="hci.html">HCI</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="#">BET Courses</a>
+				<div class="betcourse">
+					<ul>
+						<li><a href="#">BETAT-T</a></li>
+						<li><a href="#">BETChT-T</a></li>
+						<li><a href="#">BETCT-T</a></li>
+						<li><a href="#">BETET-Te</a></li>
+						<li><a href="#">BETEMT-T</a></li>
+						<li><a href="#">BETElxT-T</a></li>
+						<li><a href="#">BETInCT-T</a></li>
+						<li><a href="#">BETMT-T</a></li>
+						<li><a href="#">BETMecT-T</a></li>
+						<li><a href="#">BETNDTT-T</a></li>
+						<li><a href="#">BETDMT-T</a></li>
+						<li><a href="#">BETHVAC/RT-T</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="#">Engineering</a>
+				<div class="engcourse">
+					<ul>
+						<li><a href="#">BSCESEP-T</a></li>
+						<li><a href="#">BSEESEP-T</a></li>
+						<li><a href="#">BSECESEP-T</a></li>
+						<li><a href="#">BSMESEP-T</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="#">Bachelor's</a>
+				<div class="bachcourse">
+					<ul>
+						<li><a href="#">BGTAT-T</a></li>
+						<li><a href="#">BTVTEdET-T</a></li>
+						<li><a href="#">BTVTEdElxT-</a></li>
+						<li><a href="#">BTVTEdICT-T</a></li>
+						<li><a href="#">TechVoc Educ</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="#">Ladderized</a>
+				<div class="ladcourse">
+					<ul>
+						<li><a href="#">BSCE-LEP</a></li>
+						<li><a href="#">BSEE-LEP</a></li>
+						<li><a href="#">BSECE-LEP</a></li>
+						<li><a href="#">BSME-LEP</a></li>
+						<li><a href="#">BTIT-LDP</a></li>
+						<li><a href="#">BE-LEP</a></li>
+						<li><a href="#">BTTE-LDP</a></li>
+						<li><a href="#">BSES-LDP</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<!-- para to sa sticky sub menu
+	<div class="left">
+			<h2>Lesson: </h2>
+			<ul>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+			</ul>
+	</div>
+	-->
+	
+	<div class="content">
+		<div class="midabout">
+			<table id="table1">
+				<tr>
+					<td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3862.572643529273!2d121.03344971483911!3d14.509205389860687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cf2870dcefcf%3A0xa07beacda1e3d3b7!2sTechnological+University+of+the+Philippines+-+Taguig+Campus!5e0!3m2!1sen!2sph!4v1543411949153" allowfullscreen></iframe></td>
+					<td>
+						<p><strong>Technological University of the Philippines-Taguig</strong> was established in 1977 as one of the three prototype technician institutes in the Philippines. 
+						On January 3, 1985, the BOR passed and adopted Resolution No. 100 s. 1985 changing the name of the Manila Technician Institute to TUP Taguig campus.</p>
+						&nbsp;
+						<hr>
+						&nbsp;
+						<p><strong>Address:</strong> 14 E Service Rd, TAGUIG, Taguig, 1630 Metro Manila Technological University of the Philippines - Taguig Campus, Address</p>
+						<p><strong>Founded:</strong> 1977</p>
+						<p><strong>Motto:</strong> Haligi ng Bayan</p>
+						<p><strong>Phone:</strong> (+632) 823-2456</p>
+						<p><strong>Email:</strong> TAGUIG@TUP.EDU.PH</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<h4>Taguig Campus</h4>
+						<p>TUP-Taguig is located near industrial companies in Metro Manila at KM. 14 East service road, Western Bicutan, Taguig City. 
+						Its campus facilities include nine major buildings located in a site of 8.5 hectare area.</p>
+						<p><strong>Basic Arts and Sciences Department Building</strong>, or simply BASD, has Chemistry and Physics laboratories and the Technical Drawing rooms. 
+						It also contains classrooms for common first year lecture subjects and a laboratory room for the Computer-Aided-Design subject.</p>
+						<p><strong>The Technology Building</strong> houses the classrooms and workshop/laboratory areas for Automotive, Civil, Mechanical, Electromechanical, Instrumentation and Control,
+						Non-Destructive Testing, Refrigeration and Air Conditioning, Tool Engineering Technology, Chemical Technology and Computer Technology.</p>
+						<p><strong>The Italian Grant Building</strong> has classrooms and laboratory/workshop area for the Electrical and Electronics EngineeringTechnologies and their degree courses.</p>
+						<p><strong>The Administrative Building</strong> houses the offices of the Campus Director, Academic Affairs, Finance and Management, Student Services Division, Research and Extension, Commission on Audit, Supply and ROTC. The building also accommodates the Medical and Dental Clinic, the Architectural Technology classrooms, the Accreditation/ETEAAP room, the Internet area and the Intel-sponsored room.</p>
+					</td>
+					<td>
+						<p><strong>The Regional Center for Technical Education and Staff Development (RCTESD) building</strong> houses, on one wing, the RCTESD staff offices, 
+						the Audio-Visual room, Conference room and Syndicate rooms. The other wing has the Learning Resource Center or the Library and the offices of 
+						the Supreme Student Council, the student publication - The Philippine Artisan, and other accredited student organizations.</p>
+						<p><strong>Two Dormitory Buildings</strong> have a maximum capacity of 64 occupants per building.</p>
+						<p><strong>The Multi-purpose Hall</strong> serves as the venue for activities involving big group gatherings like the annual Acquaintance Party, Foundation Day, 
+						Wednesday Mass and other academic and social gatherings. The TUP-Taguig Campus Cooperative Canteen is also in this Building.</p>
+						<p><strong>The classroom for PSI-CEP students</strong> occupies the PSI Technologies-sponsored Building. Due to its modern furnishings, the room is often used as a venue for higher management conferences and seminars.</p>
+						<p><strong>The Building with the Conference Hall</strong> services seminars, lectures, meetings and other gatherings requiring a closed air-conditioned venue. 
+						The building is also used for the Academic Council assembly and the meetings of the faculty and staff organizations as well as student organizations.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<h2>Special thanks to . . .</h2>
+						&nbsp;
+						<p>Informations about the school</p>
+						<p>Contents</p>
+						<p>Images</p>
+						<a href="http://www.tup.edu.ph/" target="_blank">TUP-Taguig</a>
+						<hr>
+						&nbsp;
+						<p>Tutorials</p>
+						<p>Contents used for the lessons</p>
+						<a href="https://www.w3schools.com/" target="_blank">w3schools.com</a>
+						<hr>
+						&nbsp;
+						<p>Html and Css tricks</p>
+						<p>Ideas for web development</p>
+						<a href="https://www.codecademy.com/" target="_blank">codecademy</a>
+						<hr>
+						&nbsp;
+						<p>Contents used for education purposes</p>
+						<p>Html and Css tricks</p>
+						<a href="http://www.tutorialspoint.com/" target="_blank">Tutorialspoint</a>
+						<hr>
+						&nbsp;
+						<p>Images</p>
+						<p>Search Engine</p>
+						<a href="https://www.google.com.ph" target="_blank">Google</a>
+						
+					</td>
+					<td><img src="../images/aa.jpg" alt="TUPfront"></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	
+	
+</div>
+
+
+<div class="footer">
+	<div class="footcontent">
+		<div class="footleft">
+			<div class="footleft1">
+				<img src="../images/GUNAYON.jpg" alt="gunayon"/>
+				<p>Rene Angelo G. Gunayon</p>
+				<p>+639072548245</p>
+				<p>19 years old</p>
+				<a href="https://www.facebook.com/renegunayon" target="_blank">facebook.com/renegunayon</a>
+			</div>
+			
+			<div class="footleft2">
+				<img src="../images/arvin.jpg" alt="arvin"/>
+				<p>Arvin V, Pariña</p>
+				<p>09567555412</p>
+				<p>19 years old</p>
+				<a href="https://www.facebook.com/xrxbrk" target="_blank">facebook.com/xrxbrk</a>
+			</div>
+			
+			<div class="footleft3">
+				<img src="../images/jb.jpg" alt="jb"/>
+				<p>JB S. Calot</p>
+				<p>09482617575</p>
+				<p>19 years old</p>
+				<a href="https://www.facebook.com/profile.php?id=100005127317054" target="_blank">facebook.com/jbcalot</a>
+			</div>
+		</div>
+		
+		<div class="footright">
+			<div class="footright1">
+				<h3><a href="../home.html">Home</a></h3>
+				<h3><a href="about.html">About</a></h3>
+				<h3><a href="#">Contacts</a></h3>
+			</div>
+			
+			<div class="footright2">
+				<h4>Contact us</h4>
+				<p>ragunayon@gmail.com</p>
+				
+				<div class="suggest">
+					<h4>Send Suggestions</h4>
+					<textarea placeholder="Send us your feedback..."></textarea>
+					<input type="submit" value="Send"/>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="thanks">
+				<a href="http://www.tup.edu.ph/" target="_blank"><img src="../images/tupt.png" alt="tupsite" id="tupsite"/></a>
+				<a href="https://www.w3schools.com/" target="_blank"><img src="../images/w3schools.png" alt="w3schoolssite" id="w3schoolssite"/></a>
+				<a href="https://www.codecademy.com/" target="_blank"><img src="../images/codecademy.png" alt="codecademysite" id="codecademysite"/></a>
+		</div>
+	</div>
+</div>
+
+<div class="foot">
+	<p>&copy;2018 All Rights Reserved &nbsp;&bull;&nbsp; Designed by BSIT-1A Group5</p>
+</div>
+
+<div class="up">
+	<h1><a href="#logo">^</a></h1>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+	<title>TUPT|Library~Human Computer Interaction</title>
+	<link href="../images/tupt.png" rel="icon"/>
+	<link href="../css/style.css" rel="stylesheet" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<style>
+		.allhci{
+			height: 2200px;
+			width: 1600px;
+			/*width: 94%;*/
+			margin: auto;
+			background-color: #F0F0F0;
+			/*border: 1px solid red;*/
+			opacity: 0.95;
+		}
+
+
+		.midhci{
+			margin-left: 0.35%;
+			float: left;
+			width: 65%;
+			height: auto;
+			background-color: white;
+			/*border: 1px solid red;*/
+			padding-top: 10px;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-bottom: 50px;
+			line-height: 30px;
+		}
+
+		.midhci img{
+			width: 70%;
+			margin-left: 15%;
+		}
+
+
+		/* STYLE FOR TABLET/HALF SCREEN */
+		/* STYLE FOR TABLET/HALF SCREEN */
+		/* STYLE FOR TABLET/HALF SCREEN */
+		@media screen and (max-width:1100px)
+		{
+		.allhci{
+			height: 2600px;
+			width: 100%;
+			/*width: 94%;*/
+			margin: auto;
+			background-color: #F0F0F0;
+			/*border: 1px solid red;*/
+		}
+
+		.midhci{
+			margin-left: 0.35%;
+			float: left;
+			width: 65%;
+			height: auto;
+			background-color: white;
+			/*border: 1px solid red;*/
+			padding-top: 10px;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-bottom: 50px;
+			line-height: 30px;
+		}
+		}
+
+
+
+		/* STYLE FOR MINITAB */
+		/* STYLE FOR MINITAB */
+		/* STYLE FOR MINITAB */
+		@media screen and (max-width:955px)
+		{
+		.allhci{
+			height: 2600px;
+			width: 100%;
+			/*width: 94%;*/
+			margin: auto;
+			background-color: #F0F0F0;
+			/*border: 1px solid red;*/
+		}
+
+		.midhci{
+			margin-left: 0.35%;
+			float: left;
+			width: 95%;
+			height: auto;
+			background-color: white;
+			/*border: 1px solid red;*/
+			padding-top: 10px;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-bottom: 50px;
+			line-height: 30px;
+		}
+
+		}
+
+		/* PHONE*/
+		/* PHONE*/
+		/* PHONE*/
+		@media screen and (max-width:615px){
+
+		.allhci{
+			height: 3400px;
+			width: 100%;
+			/*width: 94%;*/
+			margin: auto;
+			background-color: #F0F0F0;
+			/*border: 1px solid red;*/
+		}
+
+		.midhci{
+			margin-left: 0.35%;
+			float: left;
+			width: 90%;
+			height: auto;
+			background-color: white;
+			/*border: 1px solid red;*/
+			padding-top: 10px;	
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-bottom: 50px;
+			line-height: 30px;
+		}
+		}
+	</style>
+</head>
+
+<body>
+<div class="allhci">
+	<div class="topheader">
+	
+	</div>
+	<div class="head" id="logo">
+	<!--
+		<img src="images/tupt.png" alt="" id="logo"/>
+		<h1>Technological Univesity of the Philippines</h1>
+		&nbsp;
+		<h2>Learning Resource Center	</h2>
+		<img src="images/header.png" alt="" /> -->
+		<a href="#"><img src="../images/tupt.png" alt="background" id="taas"/></a>	
+		<img src="../images/ontop.jpg" alt="logo" id="ontop"/>
+	</div>
+	<div class="navsmall">
+		
+		<div class="search">
+			<form action="https://www.google.com/search" method="GET" target="_blank">
+				<input type="text" name="q" placeholder="Google Search . . ." id="ssb"/>
+				<button id="btn"><img src="../images/search.png" alt="button"/></button>
+			</form>
+		</div>
+		
+		<ul >
+			<li ><a href="#" ><img src="../images/menu.png" alt="Menu" class="hamburger"/></a>
+				<ul>
+					<li><a href="../home.html">HOME</a></li>
+					<li id="on11"><a href="#">BS Courses</a>
+						<div class="bscourse">
+							<ul>
+								<li><a href="#">BSESSDP-T</a></li>
+								<li><a href="#">BSIS-T</a></li>
+								<li id="on22"><a href="#" id="it">BSIT-T</a>
+									<div class="itless">
+									<ul>
+										<li><a href="html.html" class="html">HTML</a></li>
+										<li><a href="c_c++.html">C/C++</a></li>
+										<li><a href="python.html">Python</a></li>
+										<li><a href="vb.html">VB.Net</a></li>
+										<li><a href="intro.html">Intro to Comp.</a></li>
+										<li id="on33"><a href="hci.html">HCI</a></li>
+									</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">BET Courses</a>
+						<div class="betcourse">
+							<ul>
+								<li><a href="#">BETAT-T</a></li>
+								<li><a href="#">BETChT-T</a></li>
+								<li><a href="#">BETCT-T</a></li>
+								<li><a href="#">BETET-Te</a></li>
+								<li><a href="#">BETEMT-T</a></li>
+								<li><a href="#">BETElxT-T</a></li>
+								<li><a href="#">BETInCT-T</a></li>
+								<li><a href="#">BETMT-T</a></li>
+								<li><a href="#">BETMecT-T</a></li>
+								<li><a href="#">BETNDTT-T</a></li>
+								<li><a href="#">BETDMT-T</a></li>
+								<li><a href="#">BETHVAC/RT-T</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">Engineering</a>
+						<div class="engcourse">
+							<ul>
+								<li><a href="#">BSCESEP-T</a></li>
+								<li><a href="#">BSEESEP-T</a></li>
+								<li><a href="#">BSECESEP-T</a></li>
+								<li><a href="#">BSMESEP-T</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">Bachelor's</a>
+						<div class="bachcourse">
+							<ul>
+								<li><a href="#">BGTAT-T</a></li>
+								<li><a href="#">BTVTEdET-T</a></li>
+								<li><a href="#">BTVTEdElxT-</a></li>
+								<li><a href="#">BTVTEdICT-T</a></li>
+								<li><a href="#">TechVoc Educ</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">Ladderized</a>
+						<div class="ladcourse">
+							<ul>
+								<li><a href="#">BSCE-LEP</a></li>
+								<li><a href="#">BSEE-LEP</a></li>
+								<li><a href="#">BSECE-LEP</a></li>
+								<li><a href="#">BSME-LEP</a></li>
+								<li><a href="#">BTIT-LDP</a></li>
+								<li><a href="#">BE-LEP</a></li>
+								<li><a href="#">BTTE-LDP</a></li>
+								<li><a href="#">BSES-LDP</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</li>
+			<li id="lesson"><a href="#">Lesson</a>
+				<ul>
+					<li id="on44"><a href="#">Introduction</a></li>
+					<li><a href="#">Processes</a></li>
+					<li><a href="#">Procedures</a></li>
+					<li><a href="#">Measuring</a></li>
+					<li><a href="#">Science</a></li>
+					<li><a href="#">Convertions</a></li>
+					<li><a href="#">Language</a></li>
+					<li><a href="#">Language</a></li>
+					<li><a href="#">Scheme</a></li>
+					<li><a href="#">Primitives</a></li>
+					<li><a href="#">Data</a></li>
+					<li><a href="#">Calculator</a></li>		
+				</ul>
+			</li>
+		</ul>
+		
+	</div>
+
+	<div class="nav">
+		<div class="search">
+			<form action="https://www.google.com/search" method="GET" target="_blank">
+				<input type="text" name="q" placeholder="Google Search . . ." id="sb"/>
+				<button id="sh"><img src="../images/search.png" alt="button"/></button>
+			</form>
+		</div>
+		<ul>
+			<li><a href="../home.html"><img src="../images/home.png" alt="icon" id="homeicon"/><span>HOME</span></a></li>
+			<li id="on1"><a href="#">BS Courses</a>
+				<div class="bscourse">
+					<ul>
+						<li><a href="#">BSESSDP-T</a></li>
+						<li><a href="#">BSIS-T</a></li>
+						<li id="on2"><a href="#">BSIT-T</a>
+							<ul>
+								<li><a href="html.html" class="html">HTML</a></li>
+								<li><a href="c_c++.html">C/C++</a></li>
+								<li><a href="python.html">Python</a></li>
+								<li><a href="vb.html">VB.Net</a></li>
+								<li><a href="intro.html">Intro to Comp.</a></li>
+								<li id="on3"><a href="hci.html">HCI</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="#">BET Courses</a>
+				<div class="betcourse">
+					<ul>
+						<li><a href="#">BETAT-T</a></li>
+						<li><a href="#">BETChT-T</a></li>
+						<li><a href="#">BETCT-T</a></li>
+						<li><a href="#">BETET-Te</a></li>
+						<li><a href="#">BETEMT-T</a></li>
+						<li><a href="#">BETElxT-T</a></li>
+						<li><a href="#">BETInCT-T</a></li>
+						<li><a href="#">BETMT-T</a></li>
+						<li><a href="#">BETMecT-T</a></li>
+						<li><a href="#">BETNDTT-T</a></li>
+						<li><a href="#">BETDMT-T</a></li>
+						<li><a href="#">BETHVAC/RT-T</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="#">Engineering</a>
+				<div class="engcourse">
+					<ul>
+						<li><a href="#">BSCESEP-T</a></li>
+						<li><a href="#">BSEESEP-T</a></li>
+						<li><a href="#">BSECESEP-T</a></li>
+						<li><a href="#">BSMESEP-T</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="#">Bachelor's</a>
+				<div class="bachcourse">
+					<ul>
+						<li><a href="#">BGTAT-T</a></li>
+						<li><a href="#">BTVTEdET-T</a></li>
+						<li><a href="#">BTVTEdElxT-</a></li>
+						<li><a href="#">BTVTEdICT-T</a></li>
+						<li><a href="#">TechVoc Educ</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="#">Ladderized</a>
+				<div class="ladcourse">
+					<ul>
+						<li><a href="#">BSCE-LEP</a></li>
+						<li><a href="#">BSEE-LEP</a></li>
+						<li><a href="#">BSECE-LEP</a></li>
+						<li><a href="#">BSME-LEP</a></li>
+						<li><a href="#">BTIT-LDP</a></li>
+						<li><a href="#">BE-LEP</a></li>
+						<li><a href="#">BTTE-LDP</a></li>
+						<li><a href="#">BSES-LDP</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<!-- para to sa sticky sub menu
+	<div class="left">
+			<h2>Lesson: </h2>
+			<ul>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+			</ul>
+	</div>
+	-->
+	
+	<div class="content">
+		<div class="left">
+			<h2>H C I <img src="../images/hci.png" alt="icon" id="lespic"/></h2>
+			<ul>
+				<li id="on4"><a href="#">Introduction</a></li>
+				<li><a href="#">What is HCI</a></li>
+				<li><a href="#">Change/Trends</a></li>
+				<li><a href="#">Dialouqe World</a></li>
+				<li><a href="#">Perception</a></li>
+				<li><a href="#">Cognition</a></li>
+				<li><a href="#">5 Senses</a></li>
+				<li><a href="#">Eye and Vision</a></li>
+				<li><a href="#">Ear and Sound</a></li>
+				<li><a href="#">Illusion</a></li>
+				<li><a href="#">Memory</a></li>
+				<li><a href="#">Short/Long</a></li>		
+			</ul>
+		</div>
+
+		<div class="midhci">
+			<h4>The basic model for human-computer interaction</h4>
+			<p> In order to depict a taxonomy of multimodal human-computer interaction we will have to clarify a number of concepts and issues. 
+			The first assumption is that there are minimally two separate agents involved, one human and one machine. 
+			They are physically separated, but are able to exchange information through a number of information channels</p>
+			<img src="../images/hci1.png" alt="HCI" />
+			<p>There are two basic processes involved on the side of the human user: <i>Perception</i> and <i>Control.</i></p>
+				<ul>
+					<li>Perceptive
+						<ul>
+							<li>Human Input Channels (HIC) and</li>
+							<li>Computer Output Media (COM)</li>
+						</ul>
+					</li>
+					<li>Control
+						<ul>
+							<li>Human Output Channels (HOC) and</li>
+							<li>Computer Input Modalities (CIM)</li>
+						</ul>
+					</li>
+				</ul>
+			
+		</div>
+
+		<div class="right">
+			<h2>Contents: </h2>
+			<hr>
+			&nbsp;
+			<p>No Avaible content</p>
+			
+		</div>
+	</div>
+	
+	
+</div>
+
+
+<div class="footer">
+	<div class="footcontent">
+		<div class="footleft">
+			<div class="footleft1">
+				<img src="../images/GUNAYON.jpg" alt="gunayon"/>
+				<p>Rene Angelo G. Gunayon</p>
+				<p>+639072548245</p>
+				<p>19 years old</p>
+				<a href="https://www.facebook.com/renegunayon" target="_blank">facebook.com/renegunayon</a>
+			</div>
+			
+			<div class="footleft2">
+				<img src="../images/arvin.jpg" alt="arvin"/>
+				<p>Arvin V, Pariña</p>
+				<p>09567555412</p>
+				<p>19 years old</p>
+				<a href="https://www.facebook.com/xrxbrk" target="_blank">facebook.com/xrxbrk</a>
+			</div>
+			
+			<div class="footleft3">
+				<img src="../images/jb.jpg" alt="jb"/>
+				<p>JB S. Calot</p>
+				<p>09482617575</p>
+				<p>19 years old</p>
+				<a href="https://www.facebook.com/profile.php?id=100005127317054" target="_blank">facebook.com/jbcalot</a>
+			</div>
+		</div>
+		
+		<div class="footright">
+			<div class="footright1">
+				<h3><a href="../home.html">Home</a></h3>
+				<h3><a href="about.html">About</a></h3>
+				<h3><a href="#">Contacts</a></h3>
+			</div>
+			
+			<div class="footright2">
+				<h4>Contact us</h4>
+				<p>ragunayon@gmail.com</p>
+				
+				<div class="suggest">
+					<h4>Send Suggestions</h4>
+					<textarea placeholder="Send us your feedback..."></textarea>
+					<input type="submit" value="Send"/>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="thanks">
+				<a href="http://www.tup.edu.ph/" target="_blank"><img src="../images/tupt.png" alt="tupsite" id="tupsite"/></a>
+				<a href="https://www.w3schools.com/" target="_blank"><img src="../images/w3schools.png" alt="w3schoolssite" id="w3schoolssite"/></a>
+				<a href="https://www.codecademy.com/" target="_blank"><img src="../images/codecademy.png" alt="codecademysite" id="codecademysite"/></a>
+		</div>
+	</div>
+</div>
+
+<div class="foot">
+	<p>&copy;2018 All Rights Reserved &nbsp;&bull;&nbsp; Designed by BSIT-1A Group5</p>
+</div>
+
+<div class="up">
+	<h1><a href="#logo">^</a></h1>
+</div>
+
+</body>
+</html>

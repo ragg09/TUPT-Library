@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+	<title>TUPT|Library~HTML</title>
+	<link href="../images/tupt.png" rel="icon"/>
+	<link href="../css/style.css" rel="stylesheet" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<style>
+		.allhtml{
+			height: 2000px;
+			width: 1600px;
+			/*width: 94%;*/
+			margin: auto;
+			background-color: #F0F0F0;
+			/*border: 1px solid red;*/
+			opacity: 0.95;
+		}
+
+		.midhtml{
+			margin-left: 0.35%;
+			float: left;
+			width: 65%;
+			height: auto;
+			background-color: white;
+			/*border: 1px solid red;*/
+			padding-top: 60px;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-bottom: 50px;
+			line-height: 30px;
+		}
+
+		.midhtml iframe{
+			 height: 750px;
+			 width: 100%;
+		}
+
+		.future{
+			height: 200px;
+			width: 400px;
+			float: right;
+			margin-right: 120px;
+			margin-top: -145px;
+			overflow: hidden;
+			z-index: 1;
+		}
+
+		.future figure{
+			width: 500%;
+			height: 100%;
+			padding: 0px;
+			margin: 0px;
+			position: relative;
+			animation: 20s slide infinite;
+			z-index: 1;
+		}
+
+		.future div{
+			float: left;
+			width: 20%;
+			height: 100%;
+		}
+
+		.future img{
+			float: left;
+			width: 100%;
+			height: 100%;
+		}
+
+		@keyframes slide{
+			0%{
+				left: 0%;
+			}
+			
+			10%{
+				left: 0%;
+			}
+			
+			12%{
+				left: -100%;
+			}
+			
+			22%{
+				left: -100%;
+			}
+			
+			24%{
+				left: -200%;
+			}
+			
+			34%{
+				left: -200%;
+			}
+			
+			36%{
+				left: -300%;
+			}
+			
+			46%{
+				left: -300%;
+			}
+			
+			48%{
+				left: -400%;
+			}
+			
+			58%{
+				left: -400%;
+			}
+			
+			60%{
+				left: -300%;
+			}
+			
+			70%{
+				left: -300%;
+			}
+			
+			72%{
+				left: -200%;
+			}
+			
+			82%{
+				left: -200%;
+			}
+			
+			84%{
+				left: -100%;
+			}
+			
+			94%{
+				left: -100%;
+			}
+			
+			96%{
+				left: 0%;
+			}
+			
+			100%{
+				left: 0%;
+			}
+		}
+
+		.future2{
+			display: none;
+		}
+
+		.midhtml #structure{
+			width: 650px;
+			height: 400px;
+			float: right;
+			margin-top: -400px;
+			box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+		}
+
+		/* STYLE FOR TABLET/HALF SCREEN */
+		/* STYLE FOR TABLET/HALF SCREEN */
+		/* STYLE FOR TABLET/HALF SCREEN */
+		@media screen and (max-width:1100px)
+		{
+		.allhtml{
+			height: 2600px;
+			width: 100%;
+			/*width: 94%;*/
+			margin: auto;
+			background-color: #F0F0F0;
+			/*border: 1px solid red;*/
+		}
+
+		.midhtml{
+			margin-left: 0.35%;
+			float: left;
+			width: 65%;
+			height: auto;
+			background-color: white;
+			/*border: 1px solid red;*/
+			padding-top: 10px;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-bottom: 50px;
+			line-height: 30px;
+		}
+
+		.future{
+			display: none;
+		}
+
+		.future2{
+			height: 200px;
+			width: 400px;
+			margin: auto;
+			display: block;
+			overflow: hidden;
+		}
+
+		.future2 figure{
+			width: 500%;
+			height: 100%;
+			padding: 0px;
+			margin: 0px;
+			position: relative;
+			animation: 20s slide infinite;
+		}
+
+		.future2 div{
+			float: left;
+			width: 20%;
+			height: 100%;
+		}
+
+		.future2 img{
+			float: left;
+			width: 100%;
+			height: 100%;
+		}
+
+		@keyframes slide{
+			0%{
+				left: 0%;
+			}
+			
+			10%{
+				left: 0%;
+			}
+			
+			12%{
+				left: -100%;
+			}
+			
+			22%{
+				left: -100%;
+			}
+			
+			24%{
+				left: -200%;
+			}
+			
+			34%{
+				left: -200%;
+			}
+			
+			36%{
+				left: -300%;
+			}
+			
+			46%{
+				left: -300%;
+			}
+			
+			48%{
+				left: -400%;
+			}
+			
+			58%{
+				left: -400%;
+			}
+			
+			60%{
+				left: -300%;
+			}
+			
+			70%{
+				left: -300%;
+			}
+			
+			72%{
+				left: -200%;
+			}
+			
+			82%{
+				left: -200%;
+			}
+			
+			84%{
+				left: -100%;
+			}
+			
+			94%{
+				left: -100%;
+			}
+			
+			96%{
+				left: 0%;
+			}
+			
+			100%{
+				left: 0%;
+			}
+		}
+
+		.midhtml #structure{
+			width: 100%;
+			height: 400px;
+			margin: auto;
+		}
+
+
+		}
+
+		/* STYLE FOR MINITAB */
+		/* STYLE FOR MINITAB */
+		/* STYLE FOR MINITAB */
+		@media screen and (max-width:955px)
+		{
+		.allhtml{
+			height: 2000px;
+			width: 100%;
+			/*width: 94%;*/
+			margin: auto;
+			background-color: #F0F0F0;
+			/*border: 1px solid red;*/
+		}
+
+		.midhtml{
+			margin-left: 0.35%;
+			float: left;
+			width: 95%;
+			height: auto;
+			background-color: white;
+			/*border: 1px solid red;*/
+			padding-top: 60px;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-bottom: 50px;
+			line-height: 30px;
+		}
+
+		.future{
+			height: 200px;
+			width: 400px;
+			float: right;
+			margin-right: -5px;
+			margin-top: -145px;
+			display: block;
+		}
+
+		.future img{
+			height: 100%;
+			width: 100%; 	
+		}
+
+		.future2{
+			display: none;
+		}
+
+		.midhtml #structure{
+			width: 500px;
+			height: 400px;
+			float: right;
+			margin-top: -400px;
+		}
+
+		}
+
+		/* befPHONE*/
+		/* bfePHONE*/
+		/* befPHONE*/
+		@media screen and (max-width:870px){
+			
+		.allhtml{
+			height: 2500px;
+			width: 100%;
+			/*width: 94%;*/
+			margin: auto;
+			background-color: #F0F0F0;
+			/*border: 1px solid red;*/
+		}
+		.future{
+			display: none;
+		}
+
+		.future2{
+			height: 200px;
+			width: 400px;
+			margin: auto;
+			display: block;
+		}
+
+		.future2 img{
+			height: 100%;
+			width: 100%; 	
+		}
+
+		.midhtml #structure{
+			width: 100%;
+			height: 400px;
+			margin: auto;
+		}
+
+		}
+
+		/* PHONE*/
+		/* PHONE*/
+		/* PHONE*/
+		@media screen and (max-width:615px){
+
+		.allhtml{
+			height: 3000px;
+			width: 100%;
+			/*width: 94%;*/
+			margin: auto;
+			background-color: #F0F0F0;
+			/*border: 1px solid red;*/
+		}
+
+		.midhtml{
+			margin-left: 0.35%;
+			float: left;
+			width: 90%;
+			height: auto;
+			background-color: white;
+			/*border: 1px solid red;*/
+			padding-top: 10px;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-bottom: 50px;
+			line-height: 30px;
+		}
+		.future{
+			display: none;
+		}
+
+		.future2{
+			height: 200px;
+			width: 400px;
+			margin: auto;
+			display: block;
+		}
+
+		.future2 img{
+			height: 100%;
+			width: 100%; 	
+		}
+
+		.midhtml #structure{
+			width: 100%;
+			height: 400px;
+			margin: auto;
+		}
+
+		}
+	</style>
+</head>
+
+<body>
+<div class="allhtml">
+	<div class="topheader">
+	
+	</div>
+	<div class="head" id="logo">
+	<!--
+		<img src="images/tupt.png" alt="" id="logo"/>
+		<h1>Technological Univesity of the Philippines</h1>
+		&nbsp;
+		<h2>Learning Resource Center	</h2>
+		<img src="images/header.png" alt="" /> -->
+		<a href="#"><img src="../images/tupt.png" alt="background" id="taas"/></a>
+		<img src="../images/ontop.jpg" alt="logo" id="ontop"/>
+	</div>
+	<div class="navsmall">
+		
+		<div class="search">
+			<form action="https://www.google.com/search" method="GET" target="_blank">
+				<input type="text" name="q" placeholder="Google Search . . ." id="ssb"/>
+				<button id="btn"><img src="../images/search.png" alt="button"/></button>
+			</form>
+		</div>
+		
+		<ul >
+			<li ><a href="#" ><img src="../images/menu.png" alt="Menu" class="hamburger"/></a>
+				<ul>
+					<li><a href="../home.html">HOME</a></li>
+					<li id="on11"><a href="#">BS Courses</a>
+						<div class="bscourse">
+							<ul>
+								<li><a href="#">BSESSDP-T</a></li>
+								<li><a href="#">BSIS-T</a></li>
+								<li id="on22"><a href="#" id="it">BSIT-T</a>
+									<div class="itless">
+									<ul>
+										<li id="on33"><a href="#" class="html">HTML</a></li>
+										<li><a href="c_c++.html">C/C++</a></li>
+										<li><a href="python.html">Python</a></li>
+										<li><a href="vb.html">VB.Net</a></li>
+										<li><a href="intro.html">Intro to Comp.</a></li>
+										<li><a href="hci.html">HCI</a></li>
+									</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">BET Courses</a>
+						<div class="betcourse">
+							<ul>
+								<li><a href="#">BETAT-T</a></li>
+								<li><a href="#">BETChT-T</a></li>
+								<li><a href="#">BETCT-T</a></li>
+								<li><a href="#">BETET-Te</a></li>
+								<li><a href="#">BETEMT-T</a></li>
+								<li><a href="#">BETElxT-T</a></li>
+								<li><a href="#">BETInCT-T</a></li>
+								<li><a href="#">BETMT-T</a></li>
+								<li><a href="#">BETMecT-T</a></li>
+								<li><a href="#">BETNDTT-T</a></li>
+								<li><a href="#">BETDMT-T</a></li>
+								<li><a href="#">BETHVAC/RT-T</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">Engineering</a>
+						<div class="engcourse">
+							<ul>
+								<li><a href="#">BSCESEP-T</a></li>
+								<li><a href="#">BSEESEP-T</a></li>
+								<li><a href="#">BSECESEP-T</a></li>
+								<li><a href="#">BSMESEP-T</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">Bachelor's</a>
+						<div class="bachcourse">
+							<ul>
+								<li><a href="#">BGTAT-T</a></li>
+								<li><a href="#">BTVTEdET-T</a></li>
+								<li><a href="#">BTVTEdElxT-</a></li>
+								<li><a href="#">BTVTEdICT-T</a></li>
+								<li><a href="#">TechVoc Educ</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">Ladderized</a>
+						<div class="ladcourse">
+							<ul>
+								<li><a href="#">BSCE-LEP</a></li>
+								<li><a href="#">BSEE-LEP</a></li>
+								<li><a href="#">BSECE-LEP</a></li>
+								<li><a href="#">BSME-LEP</a></li>
+								<li><a href="#">BTIT-LDP</a></li>
+								<li><a href="#">BE-LEP</a></li>
+								<li><a href="#">BTTE-LDP</a></li>
+								<li><a href="#">BSES-LDP</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</li>
+			<li id="lesson"><a href="#">Lesson</a>
+				<ul>
+				<li id="on44"><a href="#">Intoduction</a></li>
+				<li><a href="#">Editors</a></li>
+				<li><a href="#">Basic</a></li>
+				<li><a href="#">Elements</a></li>
+				<li><a href="#">Attributes</a></li>
+				<li><a href="#">Headings</a></li>
+				<li><a href="#">Paragraphs</a></li>
+				<li><a href="#">Styles</a></li>
+				<li><a href="#">Formatting</a></li>
+				<li><a href="#">Quotations</a></li>
+				<li><a href="#">Comments</a></li>
+				<li><a href="#">Colors</a></li>
+				<li><a href="#">CSS</a></li>
+				<li><a href="#">Links</a></li>
+				<li><a href="#">Images</a></li>
+				<li><a href="#">Tables</a></li>
+				<li><a href="#">Lists</a></li>
+				<li><a href="#">Blocks</a></li>
+				<li><a href="#">Classes</a></li>
+				<li><a href="#">Html Id</a></li>
+				<li><a href="#">Iframes</a></li>
+				<li><a href="#">JavaScript</a></li>
+				<li><a href="#">File Paths</a></li>
+				<li><a href="#">Head</a></li>
+				<li><a href="#">Layout</a></li>
+				<li><a href="#">Responsive</a></li>
+				<li><a href="#">Computercode</a></li>
+				<li><a href="#">Entitites</a></li>
+				<li><a href="#">Symbols</a></li>
+				<li><a href="#">Charset</a></li>
+				<li><a href="#">URL Encode</a></li>
+				<li><a href="#">XHTML</a></li>
+				</ul>
+			</li>
+		</ul>
+		
+	</div>
+
+	<div class="nav">
+		<div class="search">
+			<form action="https://www.google.com/search" method="GET" target="_blank">
+				<input type="text" name="q" placeholder="Google Search . . ." id="sb"/>
+				<button id="sh"><img src="../images/search.png" alt="button"/></button>
+			</form>
+		</div>
+		<ul>
+			<li><a href="../home.html"><img src="../images/home.png" alt="icon" id="homeicon"/><span>HOME</span></a></li>
+			<li id="on1"><a href="#">BS Courses</a>
+				<div class="bscourse">
+					<ul>
+						<li><a href="#">BSESSDP-T</a></li>
+						<li><a href="#">BSIS-T</a></li>
+						<li  id="on2"><a href="#">BSIT-T</a>
+							<ul>
+								<li id="on3"><a href="#" class="html">HTML</a></li>
+								<li><a href="c_c++.html">C/C++</a></li>
+								<li><a href="python.html">Python</a></li>
+								<li><a href="vb.html">VB.Net</a></li>
+								<li><a href="intro.html">Intro to Comp.</a></li>
+								<li><a href="hci.html">HCI</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="#">BET Courses</a>
+				<div class="betcourse">
+					<ul>
+						<li><a href="#">BETAT-T</a></li>
+						<li><a href="#">BETChT-T</a></li>
+						<li><a href="#">BETCT-T</a></li>
+						<li><a href="#">BETET-Te</a></li>
+						<li><a href="#">BETEMT-T</a></li>
+						<li><a href="#">BETElxT-T</a></li>
+						<li><a href="#">BETInCT-T</a></li>
+						<li><a href="#">BETMT-T</a></li>
+						<li><a href="#">BETMecT-T</a></li>
+						<li><a href="#">BETNDTT-T</a></li>
+						<li><a href="#">BETDMT-T</a></li>
+						<li><a href="#">BETHVAC/RT-T</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="#">Engineering</a>
+				<div class="engcourse">
+					<ul>
+						<li><a href="#">BSCESEP-T</a></li>
+						<li><a href="#">BSEESEP-T</a></li>
+						<li><a href="#">BSECESEP-T</a></li>
+						<li><a href="#">BSMESEP-T</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="#">Bachelor's</a>
+				<div class="bachcourse">
+					<ul>
+						<li><a href="#">BGTAT-T</a></li>
+						<li><a href="#">BTVTEdET-T</a></li>
+						<li><a href="#">BTVTEdElxT-</a></li>
+						<li><a href="#">BTVTEdICT-T</a></li>
+						<li><a href="#">TechVoc Educ</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="#">Ladderized</a>
+				<div class="ladcourse">
+					<ul>
+						<li><a href="#">BSCE-LEP</a></li>
+						<li><a href="#">BSEE-LEP</a></li>
+						<li><a href="#">BSECE-LEP</a></li>
+						<li><a href="#">BSME-LEP</a></li>
+						<li><a href="#">BTIT-LDP</a></li>
+						<li><a href="#">BE-LEP</a></li>
+						<li><a href="#">BTTE-LDP</a></li>
+						<li><a href="#">BSES-LDP</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<!-- para to sa sticky sub menu
+	<div class="left">
+			<h2>Lesson: </h2>
+			<ul>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+				<li><a href="#">exaple</a></li>
+			</ul>
+	</div>
+	-->
+	
+	<div class="content">
+		<div class="left">
+			<h2>HTML & CSS<img src="../images/html.png" alt="icon" id="lespic"/></h2>
+			<ul>
+				<li id="on4"><a href="#">Intoduction</a></li>
+				<li><a href="#">Editors</a></li>
+				<li><a href="#">Basic</a></li>
+				<li><a href="#">Elements</a></li>
+				<li><a href="#">Attributes</a></li>
+				<li><a href="#">Headings</a></li>
+				<li><a href="#">Paragraphs</a></li>
+				<li><a href="#">Styles</a></li>
+				<li><a href="#">Formatting</a></li>
+				<li><a href="#">Quotations</a></li>
+				<li><a href="#">Comments</a></li>
+				<li><a href="#">Colors</a></li>
+				<li><a href="#">CSS</a></li>
+				<li><a href="#">Links</a></li>
+				<li><a href="#">Images</a></li>
+				<li><a href="#">Tables</a></li>
+				<li><a href="#">Lists</a></li>
+				<li><a href="#">Blocks</a></li>
+				<li><a href="#">Classes</a></li>
+				<li><a href="#">Html Id</a></li>
+				<li><a href="#">Iframes</a></li>
+				<li><a href="#">JavaScript</a></li>
+				<li><a href="#">File Paths</a></li>
+				<li><a href="#">Head</a></li>
+				<li><a href="#">Layout</a></li>
+				<li><a href="#">Responsive</a></li>
+				<li><a href="#">Computercode</a></li>
+				<li><a href="#">Entitites</a></li>
+				<li><a href="#">Symbols</a></li>
+				<li><a href="#">Charset</a></li>
+				<li><a href="#">URL Encode</a></li>
+				<li><a href="#">XHTML</a></li>
+			</ul>
+		</div>
+
+		<div class="midhtml">
+			<h2>Welcome in HTML Tutorial</h2>
+			<p>You are about to become a web design professional.</p>
+			<p>Stay tuned!	</p>
+			<div class="future">
+				<figure>
+					<div>
+						<img src="../images/future1.png" alt="images1"/>
+					</div>
+					
+					<div>
+						<img src="../images/future2.png" alt="images2"/>
+					</div>
+					
+					<div>
+						<img src="../images/future3.png" alt="images3"/>
+					</div>
+					
+					<div>
+						<img src="../images/future4.png" alt="images4"/>
+					</div>
+					
+					<div>
+						<img src="../images/future5.png" alt="images5"/>
+					</div>
+				</figure>
+			</div>
+			
+			<div class="future2">
+				<figure>
+					<div>
+						<img src="../images/future1.png" alt="images1"/>
+					</div>
+					
+					<div>
+						<img src="../images/future2.png" alt="images2"/>
+					</div>
+					
+					<div>
+						<img src="../images/future3.png" alt="images3"/>
+					</div>
+					
+					<div>
+						<img src="../images/future4.png" alt="images4"/>
+					</div>
+					
+					<div>
+						<img src="../images/future5.png" alt="images5"/>
+					</div>
+				</figure>
+			</div>
+			
+			&nbsp;
+			<h3>What is HTML</h3>
+			<p><strong>Hyper Text Markup Language</strong> is the standard markup language for creating web pages and web applications. 
+			With Cascading Style Sheets and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web.
+			</p>
+			<p><strong>HyperText</strong> is the method by which you move around on the web — by clicking on special text called hyperlinks which bring you to the next page. 
+			The fact that it is hyper just means it is not linear — i.e. you can go to any place on the Internet whenever you want 
+			by clicking on links — there is no set order to do things in.
+			</p>
+			<p id="bastruc"><strong> Markup</strong> is what HTML tags do to the text inside them. They mark it as a certain type of text (<i>italicised</i> text, for example).</p>
+			&nbsp;
+			<hr/>
+			&nbsp;
+			<h4>Basic Structure of HTML</h4>
+				<p>&lt;!DOCTYPE html&gt;</p>
+				<p>&lt;html&gt;</p>
+				<p>&lt;head&gt;</p>
+				<p>&lt;title&gt;Title of youe Website&lt;/title&gt;</p>
+				<p>&lt;/head&gt;</p>
+				<p>&lt;body&gt;</p>
+				<p>&lt;h1&gt;This is for Headings&lt;/h1&gt;</p>
+				<p>&lt;img src="example.png" alt="image_description"/&gt;</p>
+				<p>&lt;p>Any text or paragraph&lt;/p&gt;</p>
+				<p>&lt;!-- comments | it is not visible to browser --&gt;</p>
+				<p>&lt;/body&gt;</p>
+				<p id="ex" >&lt;/html&gt;</p>
+			<img src="../images/structure.png" alt="Example" id="structure"/>
+			&nbsp;
+			<hr>
+			&nbsp;
+			<h4>After this tuotrial you are able to do this kind of website</h4>
+			<iframe src="html.html"></iframe>
+		</div>
+
+		<div class="right">
+			<h2>Contents: </h2>
+			<ul>
+				<li><a href="#logo">Introduction</a></li>
+				<li><a href="#bastruc">Basic Structure</a></li>
+				<li><a href="#ex">You might accomplish</a></li>
+			</ul>
+			
+		</div>
+	</div>
+	
+	
+</div>
+
+
+<div class="footer">
+	<div class="footcontent">
+		<div class="footleft">
+			<div class="footleft1">
+				<img src="../images/GUNAYON.jpg" alt="Gunayon"/>
+				<p>Rene Angelo G. Gunayon</p>
+				<p>+639072548245</p>
+				<p>19 years old</p>
+				<a href="https://www.facebook.com/renegunayon" target="_blank">facebook.com/renegunayon</a>
+			</div>
+			
+			<div class="footleft2">
+				<img src="../images/arvin.jpg" alt="Arvin"/>
+				<p>Arvin V, Pariña</p>
+				<p>09567555412</p>
+				<p>19 years old</p>
+				<a href="https://www.facebook.com/xrxbrk" target="_blank">facebook.com/xrxbrk</a>
+			</div>
+			
+			<div class="footleft3">
+				<img src="../images/jb.jpg" alt="Jb"/>
+				<p>JB S. Calot</p>
+				<p>09482617575</p>
+				<p>19 years old</p>
+				<a href="https://www.facebook.com/profile.php?id=100005127317054" target="_blank">facebook.com/jbcalot</a>
+			</div>
+		</div>
+		
+		<div class="footright">
+			<div class="footright1">
+				<h3><a href="../home.html">Home</a></h3>
+				<h3><a href="about.html">About</a></h3>
+				<h3><a href="#">Contacts</a></h3>
+			</div>
+			
+			<div class="footright2">
+				<h4>Contact us</h4>
+				<p>ragunayon@gmail.com</p>
+				
+				<div class="suggest">
+					<h4>Send Suggestions</h4>
+					<textarea placeholder="Send us your feedback..."></textarea>
+					<input type="submit" value="Send"/>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="thanks">
+				<a href="http://www.tup.edu.ph/" target="_blank"><img src="../images/tupt.png" alt="tupsite" id="tupsite"/></a>
+				<a href="https://www.w3schools.com/" target="_blank"><img src="../images/w3schools.png" alt="w3schoolssite" id="w3schoolssite"/></a>
+				<a href="https://www.codecademy.com/" target="_blank"><img src="../images/codecademy.png" alt="codecademysite" id="codecademysite"/></a>
+		</div>
+	</div>
+</div>
+
+<div class="foot">
+	<p>&copy;2018 All Rights Reserved &nbsp;&bull;&nbsp; Designed by BSIT-1A Group5</p>
+</div>
+
+<div class="up">
+	<h1><a href="#logo">^</a></h1>
+</div>
+
+</body>
+</html>
